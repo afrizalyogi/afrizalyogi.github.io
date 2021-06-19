@@ -1,23 +1,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@media only screen and (max-width: 560px) {
+    html body #main h1 {
+        font-size: 28px;
+    }
+
+    body #main p {
+        font-size: 12px;
+    }
+
+    #links #cta {
+        height: 40px;
+        width: 80px;
+        font-size: 75%;
+    }
+
+    #menu-icon img {
+        height: 16px;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    /* Remove left big half head picture from display */
+    body #left-head {
+        display: none;
+    }
+
+    body #main {
+        top: 10%;
+        left: 10%;
+    }
+
+    body #main h1 {
+        font-size: 42px;
+    }
+
+    body #main-items {
+        padding-right: 15%;
+        max-width: 580px;
+    }
+
+    #links .links-icon {
+        height: 20px;
+        width: 20px;
+    }
+}
+
 body {
     font-family: 'Poppins', sans-serif;
+    min-width: 380px;
 }
 
 a {
     text-decoration: none;
 }
 
+/* Left big half head picture */
 #left-head {
     position: absolute;
-    top: -0.05%;
-    left: -23%;
+    display: inline;
+    top: 0;
+    left: 0;
     height: 100%;
-    width: auto;
 }
 
 #left-head img {
-    position: absolute;
     height: 100%;
     width: auto;
 }
@@ -28,21 +75,27 @@ a {
     top: 18%;
     left: 28%;
     height: auto;
-    width: 36.5%;
     user-select: none;
 }
 
 #main h1 {
-    margin-bottom: -10px;
-    font-size: 47px;
+    margin-bottom: -15px;
+    font-size: 56px;
     font-weight: bold;
+}
+
+#main p {
+    margin-bottom: 12%;
+}
+
+#main-items {
+    max-width: 600px;
 }
 
 #links {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 10%;
 }
 
 #cta {
@@ -52,7 +105,7 @@ a {
     color: #fff;
     font-size: 100%;
     font-weight: bold;
-    border: 2px solid #eee;
+    border: 2px solid #007aff;
     border-radius: 12px;
     cursor: pointer;
     transition: all 150ms ease;
