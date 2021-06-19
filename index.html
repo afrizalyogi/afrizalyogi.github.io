@@ -21,7 +21,7 @@
     <meta name="msapplication-TileColor" content="#111111">
     <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#111111">
-    <title>Afrizal Yogi Pratama</title>
+    <title>Afrizal Yogi Pratama | Personal links website</title>
 </head>
 <body>
     <div id="left-head">
@@ -52,8 +52,14 @@
         </div>
     </div>
     <div id="menu">
-        <div id="menu-icon">
+        <div id="menu-icon" onclick="openNav()">
             <img src="https://raw.githubusercontent.com/afrizalyogi/cdn/ab46ebc07ba116194593205e4000b8b0e5a9e55f/Assets/Icons/ros.svg" alt="CC" height="24px"/>
+        </div>
+        <div id="menu-items">
+            <a href="javascript:void(0)" id="btn-close" onclick="closeNav()">&times;</a>
+            <a href="#">Home</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Support</a>
         </div>
     </div>
     <div id="credit">
@@ -71,5 +77,7 @@
     </div>
     <div id="object">
     </div>
+
+    <script src="./js/main.js"></script>
 </body>
 </html>
