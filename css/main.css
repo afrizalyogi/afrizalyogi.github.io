@@ -7,7 +7,7 @@
     }
 
     body #main p {
-        font-size: 12px;
+        font-size: 8px;
     }
 
     #links #cta {
@@ -67,8 +67,9 @@
     }
 
     #menu #menu-items {
-        padding-top: 10%;
-        backdrop-filter: blur(20px);
+        padding-top: 15%;
+        background-color: #fff;
+        backdrop-filter: blur(0);
     }
 
     #menu #menu-items a {
@@ -88,8 +89,8 @@
     }
 
     #object #obj-1 {
+        top: 80%;
         right: -25%;
-        bottom: -70%;
     }
 
     #object #obj-1 img {
@@ -121,6 +122,8 @@
 body {
     font-family: 'Poppins', sans-serif;
     min-width: 380px;
+    height: 100vh;
+    width: 100vh;
     user-select: none;
     overflow: hidden;
 }
@@ -331,8 +334,8 @@ a {
 
 #obj-1 {
     position: absolute;
+    top: 75%;
     right: -20%;
-    bottom: -60%;
 }
 
 #obj-1 img {
