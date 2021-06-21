@@ -3,6 +3,7 @@
 @media only screen and (max-width: 560px) {
     /* Adjust style for mobile layout */
     html body #main h1 {
+        margin-bottom: -10px;
         font-size: 28px;
     }
 
@@ -122,8 +123,6 @@
 body {
     font-family: 'Poppins', sans-serif;
     min-width: 380px;
-    height: 100vh;
-    width: 100vh;
     user-select: none;
     overflow: hidden;
 }
@@ -340,7 +339,7 @@ a {
 
 #obj-1 img {
     height: 600px;
-    opacity: 50%;
+    opacity: 60%;
 }
 
 #obj-2 {
@@ -351,8 +350,8 @@ a {
 
 #obj-2 img {
     height: 450px;
-    opacity: 75%;
-    filter: blur(5px);
+    opacity: 50%;
+    filter: blur(7px);
 }
 
 #obj-3 {
@@ -363,8 +362,8 @@ a {
 
 #obj-3 img {
     height: 200px;
-    opacity: 50%;
-    filter: blur(2px);
+    opacity: 30%;
+    filter: blur(3px);
 }
 
 #obj-4 {
@@ -376,8 +375,8 @@ a {
 
 #obj-4 img {
     height: 50px;
-    opacity: 50%;
-    filter: blur(1px);
+    opacity: 40%;
+    filter: blur(2px);
 }
 
 #obj-5 {
@@ -390,11 +389,12 @@ a {
 #obj-5 img {
     height: 75px;
     opacity: 50%;
+    filter: blur(1px);
 }
 
 @keyframes obj-4 {
     50% {
-        transform: translateX(210%) translateY(-100%) rotateZ(180deg);
+        transform: translate(210%, -100%) rotateZ(180deg);
     }
 }
 
