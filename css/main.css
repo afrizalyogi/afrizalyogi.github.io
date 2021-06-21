@@ -279,6 +279,7 @@ a {
     right: 0;
     font-size: 36px;
     color: #333;
+    z-index: 2;
 }
 
 #menu-items #btn-close:hover {
