@@ -20,7 +20,7 @@
         height: 16px;
     }
 
-    #object #obj-1 {
+    body #object #obj-1 {
         display: none;
     }
 
@@ -30,6 +30,14 @@
 
     body #object #obj-3 img {
         height: 90px;
+    }
+
+    body #object #obj-4 img {
+        height: 25px;
+    }
+
+    body #object #obj-5 img {
+        height: 40px;
     }
 }
 
