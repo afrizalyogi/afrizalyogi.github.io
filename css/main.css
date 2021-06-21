@@ -20,8 +20,8 @@
         height: 16px;
     }
 
-    body #object #obj-1 {
-        display: none;
+    body #object #obj-1 img {
+        height: 250px;
     }
 
     body #object #obj-2 img {
@@ -88,7 +88,12 @@
     }
 
     #object #obj-1 {
-        display: none;
+        right: -25%;
+        bottom: -70%;
+    }
+
+    #object #obj-1 img {
+        height: 400px;
     }
 
     #object #obj-2 {
@@ -105,6 +110,11 @@
 
     #object #obj-3 img {
         height: 150px;
+    }
+
+    #object #obj-4 {
+        top: 14%;
+        left: 1%;
     }
 }
 
@@ -321,8 +331,8 @@ a {
 
 #obj-1 {
     position: absolute;
-    top: 75%;
-    left: 70%;
+    right: -20%;
+    bottom: -60%;
 }
 
 #obj-1 img {
