@@ -29,6 +29,10 @@
         height: 200px;
     }
 
+    body #object #obj-3 {
+        right: -12%;
+    }
+
     body #object #obj-3 img {
         height: 90px;
     }
@@ -376,7 +380,7 @@ a {
 #obj-4 img {
     height: 50px;
     opacity: 40%;
-    filter: blur(2px);
+    filter: blur(1.5px);
 }
 
 #obj-5 {
