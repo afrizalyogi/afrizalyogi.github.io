@@ -2,15 +2,27 @@
 
 @media only screen and (max-width: 560px) {
     /* Adjust style for mobile layout */
+    html body #main {
+        left: 5%;
+    }
+
     html body #main h1 {
         margin-bottom: -10px;
         font-size: 28px;
+    }
+
+    html body #main p {
+        font-size: 9px;
     }
 
     #links #cta {
         height: 40px;
         width: 80px;
         font-size: 75%;
+    }
+
+    body #object #obj-5 {
+        left: 75%;
     }
 }
 
@@ -21,12 +33,11 @@
     }
 
     body #main {
-        top: 10%;
-        left: 5%;
+        left: 10%;
     }
 
     body #main h1 {
-        font-size: 42px;
+        font-size: 48px;
     }
 
     body #main-items {
@@ -59,6 +70,14 @@
 
     #credit-text img {
         height: 8px;
+    }
+
+    #object #obj-2 {
+        left: -12%;
+    }
+
+    #object #obj-2 img {
+        height: 50vh;
     }
 
     #object #obj-4 {
@@ -98,7 +117,6 @@ a {
     position: absolute;
     top: 18%;
     left: 28%;
-    height: auto;
 }
 
 #main h1 {
@@ -285,7 +303,7 @@ a {
 }
 
 #obj-1 img {
-    height: 25vh;
+    height: 20vh;
     opacity: 60%;
 }
 
@@ -296,7 +314,7 @@ a {
 }
 
 #obj-2 img {
-    height: 65vh;
+    height: 450px;
     opacity: 90%;
     filter: blur(7px);
 }
@@ -308,7 +326,7 @@ a {
 }
 
 #obj-3 img {
-    height: 25vh;
+    height: 22vh;
     opacity: 70%;
     filter: blur(3px);
 }
