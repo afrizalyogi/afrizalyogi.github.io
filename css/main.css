@@ -12,34 +12,6 @@
         width: 80px;
         font-size: 75%;
     }
-
-    #menu-icon img {
-        height: 16px;
-    }
-
-    body #object #obj-1 img {
-        height: 250px;
-    }
-
-    body #object #obj-2 img {
-        height: 200px;
-    }
-
-    body #object #obj-3 {
-        right: -12%;
-    }
-
-    body #object #obj-3 img {
-        height: 90px;
-    }
-
-    body #object #obj-4 img {
-        height: 25px;
-    }
-
-    body #object #obj-5 img {
-        height: 40px;
-    }
 }
 
 @media only screen and (max-width: 990px) {
@@ -87,31 +59,6 @@
 
     #credit-text img {
         height: 8px;
-    }
-
-    #object #obj-1 {
-        top: 80%;
-        right: -25%;
-    }
-
-    #object #obj-1 img {
-        height: 400px;
-    }
-
-    #object #obj-2 {
-        left: -25%;
-    }
-
-    #object #obj-2 img {
-        height: 300px;
-    }
-
-    #object #obj-3 {
-        right: -10%;
-    }
-
-    #object #obj-3 img {
-        height: 150px;
     }
 
     #object #obj-4 {
@@ -333,12 +280,12 @@ a {
 
 #obj-1 {
     position: absolute;
-    top: 75%;
-    right: -20%;
+    right: 0;
+    bottom: 0;
 }
 
 #obj-1 img {
-    height: 600px;
+    height: 25vh;
     opacity: 60%;
 }
 
@@ -349,20 +296,20 @@ a {
 }
 
 #obj-2 img {
-    height: 450px;
-    opacity: 50%;
+    height: 65vh;
+    opacity: 90%;
     filter: blur(7px);
 }
 
 #obj-3 {
     position: absolute;
-    top: 3%;
-    right: -7%;
+    top: 5%;
+    right: 0;
 }
 
 #obj-3 img {
-    height: 200px;
-    opacity: 30%;
+    height: 25vh;
+    opacity: 70%;
     filter: blur(3px);
 }
 
@@ -374,8 +321,8 @@ a {
 }
 
 #obj-4 img {
-    height: 50px;
-    opacity: 40%;
+    height: 8vh;
+    opacity: 90%;
     filter: blur(1.5px);
 }
 
@@ -387,8 +334,8 @@ a {
 }
 
 #obj-5 img {
-    height: 75px;
-    opacity: 50%;
+    height: 10vh;
+    opacity: 60%;
     filter: blur(1px);
 }
 
