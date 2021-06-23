@@ -33,6 +33,7 @@
     }
 
     body #main {
+        top: 10%;
         left: 10%;
     }
 
@@ -73,7 +74,7 @@
     }
 
     #object #obj-2 {
-        left: -12%;
+        left: -18%;
     }
 
     #object #obj-2 img {
