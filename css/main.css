@@ -21,6 +21,10 @@
         font-size: 75%;
     }
 
+    body #object #obj-2 {
+        left: -25%;
+    }
+
     body #object #obj-5 {
         left: 75%;
     }
@@ -74,11 +78,11 @@
     }
 
     #object #obj-2 {
-        left: -18%;
+        left: -16%;
     }
 
     #object #obj-2 img {
-        height: 50vh;
+        height: 40vh;
     }
 
     #object #obj-4 {
