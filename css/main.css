@@ -29,8 +29,8 @@
         left: 22%;
     }
 
-    body #object #obj-1 {
-        display: none;
+    body #object #obj-1 img {
+        height: 10vh;
     }
 
     body #object #obj-2 img {
