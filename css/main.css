@@ -25,8 +25,8 @@
         font-size: 75%;
     }
 
-    body #credit {
-        left: 22%;
+    html body #credit {
+        left: 15vh;
     }
 
     body #object #obj-1 img {
@@ -81,6 +81,10 @@
 
     #menu #menu-items a {
         text-align: center;
+    }
+
+    body #credit {
+        left: 25vh;
     }
 
     #credit #credit-text {
