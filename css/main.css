@@ -1,383 +1,625 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-@media only screen and (max-width: 560px) {
-    /* Adjust style for mobile layout */
-    html body #main {
-        left: 5%;
+@media only screen and (max-width: 576px) {
+    /* Adjust style for small/mobile screen layout */
+    /* Home Section (Sorted by Used First) */
+    body #home-main h1 {
+        margin-bottom: 14%;
+        font-size: 58px;
+        line-height: 70px;
     }
-
-    html body #main h1 {
-        margin-bottom: -10px;
-        font-size: 28px;
+    /* Portfolio Section (Sorted by Used First) */
+    body #portfolio #portfolio-main .row .col-text {
+        max-width: 100%;
     }
-
-    html body #main p {
-        font-size: 9px;
+    /* About Section (Sorted by Used First) */
+    body #about #about-main .row .col-text div {
+        width: 100%;
     }
-
-    body #left-head {
-        height: 55%;
+    /* Contact Section (Sorted by Used First) */
+    html body section #contact-main {
+        padding: 4%;
     }
-
-    #links #cta {
-        height: 40px;
-        width: 80px;
-        font-size: 75%;
+    #contact-main .row div .col-text h2 {
+        font-size: 26px;
     }
-
-    html body #credit {
-        left: 15vh;
+    /* CSS Class (Sorted by A-Z) */
+    section div .row .col-text h2 {
+        font-size: 36px;
     }
-
-    body #object #obj-1 img {
-        height: 10vh;
+    section div .row .col-text h3 {
+        font-size: 24px;
     }
-
-    body #object #obj-2 img {
-        height: 30vh;
-    }
-
-    body #object #obj-4 {
-        top: 8%;
-        left: 1%;
-    }
-
-    body #object #obj-5 {
-        top: 70%;
-        left: 75%;
+    section div .row .col-text p {
+        font-size: 18px;
     }
 }
 
-@media only screen and (max-width: 990px) {
-    /* Adjust style for tablet layout */
-    body #main {
-        top: 7%;
-        left: 22%;
+@media only screen and (max-width: 768px) {
+    /* Adjust style for medium screen layout */
+    body section {
+        padding: 2%;
+        margin-bottom: 6%;
     }
-
-    body #main h1 {
-        font-size: 44px;
+    /* Home Section (Sorted by Used First) */
+    /* Portfolio Section (Sorted by Used First) */
+    #portfolio #portfolio-main .row .col-text {
+        max-width: 90%;
     }
-
-    body #main p {
-        font-size: 14px;
+    /* About Section (Sorted by Used First) */
+    #about #about-main .row .col-text div {
+        width: 90%;
     }
-
-    body #main-items {
-        padding-right: 15%;
-        max-width: 580px;
+    /* Contact Section (Sorted by Used First) */
+    body section #contact-main {
+        padding: 8%;
     }
-
-    #links .links-icon {
-        height: 20px;
-        width: 20px;
+    /* CSS Class (Sorted by A-Z) */
+    div .row .col-text h2 {
+        font-size: 38px;
     }
-
-    #menu #menu-items {
-        padding-top: 15%;
-        background-color: #fff;
-        backdrop-filter: blur(0);
+    div .row .col-text h3 {
+        font-size: 26px;
     }
+    div .row .col-text p {
+        font-size: 20px;
+    }
+}
 
-    #menu #menu-items a {
+@media only screen and (max-width: 992px) {
+    /* Adjust style for large screen layout */
+    body section {
+        padding: 2%;
+        margin-bottom: 6%;
+    }
+    body nav ul {
+        display: none;
+        visibility: hidden;
+    }
+    /* Home Section (Sorted by Used First) */
+    #home #home-main {
+        margin: 8% 2% 12% 2%;
+        width: 100%;
+    }
+    /* Portfolio Section (Sorted by Used First) */
+    #portfolio-main .row .col-text {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        max-width: 70%;
+    }
+    /* Contact Section (Sorted by Used First) */
+    body #contact {
+        padding-top: 6%;
+        margin-bottom: 0;
+    }
+    #contact footer {
+        margin-left: auto;
+        margin-right: auto;
         text-align: center;
     }
-
-    body #credit {
-        left: 25vh;
+    section #contact-main {
+        padding: 0 14%;
+        margin-left: auto;
+        margin-right: auto;
     }
-
-    #credit #credit-text {
-        font-size: 8px;
+    section #contact-main .links {
+        margin-left: auto;
+        margin-right: auto;
     }
-
-    #credit-text img {
-        height: 8px;
+    /* CSS Class (Sorted by A-Z) */
+    div .links {
+        width: 85%;
     }
-
-    #object #obj-4 {
-        top: 12%;
-        left: 20%;
+    section .section-title {
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    section .section-title h1 {
+        margin-right: 0;
+        text-align: center;
+    }
+    .section-title .block-sm {
+        display: block;
+    }
+    .row .col-4 {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+    .row .col-6 {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+    .row .col {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    }
+    .row .col-text {
+        margin-bottom: 8%;
+    }
+    .row .col-text h2 {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .row .col-text h3 {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .row .col-text p {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .row .col-img img {
+        display: flex;
+        padding-left: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    div .other-links {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        text-align: center;
+    }
+    #about #about-main .row .col-text div {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    div .about-text {
+        margin-bottom: 14%;
+    }
+    /* Object Section (Sorted by A-Z) */
+    div .line {
+        margin-left: auto;
+        margin-right: auto;
     }
 }
-
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: var(--other);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--secondary);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--cta);
+}
+:root {
+    --cta: #007aff;
+    --none: rgba(0,0,0,0);
+    /* Light Mode */ 
+    --primary: #000;
+    --secondary: rgba(0,0,0,0.8);
+    --bg-primary: #fff;
+    --bg-secondary: rgba(255,255,255,0.8);
+    --shadow-primary: rgba(0,0,0,0.1);
+    --shadow-secondary: rgba(150,150,150,0.1);
+    /* Dark Mode 
+    --primary: #fff;
+    --secondary: rgba(255,255,255,0.8);
+    --other: rgba(255,255,255,0.6);
+    --bg-primary: #111;
+    --bg-secondary: rgba(0,0,0,0.8);
+    --shadow-primary: rgba(100,100,100,0.1);
+    --shadow-secondary: rgba(50,50,50,0.1);*/
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
 body {
-    font-family: 'Poppins', sans-serif;
     min-width: 380px;
-    user-select: none;
-    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary);
+    background: var(--bg-primary);
 }
-
+/* HTML Tag (Sorted by A-Z) */
 a {
     text-decoration: none;
 }
-
-/* Left big half head picture */
-#left-head {
-    position: absolute;
-    display: inline;
-    left: 0;
-    bottom: 0;
-    height: 100%;
+img {
+    user-select: none;
+    -webkit-user-drag: none;
 }
-
-#left-head img {
-    height: 100%;
-    width: auto;
-    filter: saturate(110%) brightness(110%);
+nav ul {
+    position: fixed;
+    top: 30%;
+    right: 4%;
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 45px;
+    text-align: right;
+    list-style: none;
+    animation: right-left 700ms;
 }
-
-/* Main Content display include Name, Short Bio and Links */
-#main {
-    position: absolute;
-    top: 18%;
-    left: 28%;
+nav ul li a {
+    color: var(--secondary);
 }
-
-#main h1 {
-    margin-bottom: -15px;
-    font-size: 56px;
-    font-weight: bold;
-    transition: all 200ms ease;
+nav ul li a:hover {
+    color: var(--cta);
 }
-
-#main p {
-    margin-bottom: 12%;
-    transition: all 200ms ease;
+section {
+    padding: 6% 8%;
 }
-
-#main-items {
-    max-width: 580px;
+/* Home Section (Sorted by Used First) */
+#home {
+    padding: 4% 8%;
 }
-
-/* Links section */
-#links {
+#home h2 {
+    color: var(--secondary);
+    font-weight: 500;
+}
+#home-main {
+    margin: 8% 6% 10% 6%;
+    width: 75%;
+}
+#home-main h1 {
+    margin-bottom: 8%;
+    font-size: 72px;
+    line-height: 90px;
+    animation: up-down 800ms;
+}
+#home-main h1 b {
+    color: var(--bg-primary);
+    text-shadow:
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+    -webkit-text-stroke: 2px var(--primary);
+}
+#scroll-down {
     display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary);
+    animation: up-down-static 1500ms infinite;
+}
+#scroll-down p {
+    letter-spacing: 5px;
+    margin-right: 10px;
+}
+#scroll-outer {
+    height: 25px;
+    fill: none;
+    stroke: var(--secondary);
+    stroke-width: 3px;
+}
+#scroll-inner {
+    margin-left: -8px;
+    height: 10px;
+    width: 2px;
+    fill: var(--secondary);
+    animation: up-down-static 1500ms infinite;
+}
+/* About Section (Sorted by Used First) */
+#about-main .row .col div {
+    width: 70%;
+}
+/* Contact Section (Sorted by Used First) */
+#contact {
+    padding-bottom: 2%;
+    background: var(--bg-primary);
+    border-radius: 40px 40px 0 0;
+    box-shadow: 0 -2px 2px var(--shadow-primary), 
+                inset 0px 0px 10px var(--shadow-primary);
+}
+#contact .row {
+    margin-top: 8%;
+}
+#contact-main .col-text {
+    margin-bottom: 6%;
+}
+#contact-main .links {
+    width: 90%;
+}
+/* CSS Class (Sorted by A-Z) */
+.about-text {
+    margin-bottom: 26%;
+}
+.active {
+    font-weight: 500;
+    color: var(--cta);
+}
+.block-sm {
+    display: inline-flex;
+    align-items: center;
+}
+.container {
+    margin-left: 8%;
+    margin-right: 8%;
+}
+.col-4 {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 40%;
+    animation: down-up 800ms;
+}
+.col-6 {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 60%;
+    animation: down-up 800ms;
+}
+.col {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+    animation: down-up 800ms;
+}
+.col-text h2 {
+    margin-bottom: 15px;
+    font-size: 42px;
+    line-height: 50px;
+    color: var(--primary);
+}
+.col-text h3 {
+    margin-bottom: 5px;
+    font-size: 28px;
+    color: var(--secondary);
+}
+.col-text p {
+    font-size: 22px;
+    color: var(--secondary);
+}
+.col-img img {
+    margin-left: 20%;
+    width: 70%;
+    border-radius: 15px;
+    box-shadow: 0 0px 4px var(--shadow-primary), 
+                inset 0px 0px 10px var(--shadow-primary);
+    transition: all 1500ms;
+}
+.col-img img:hover {
+    box-shadow: 0 0px 1px var(--shadow-primary),
+                0 1px 1px var(--shadow-primary), 
+                0 2px 2px var(--shadow-primary), 
+                0 4px 4px var(--shadow-primary), 
+                0 8px 8px var(--shadow-primary);
+    transform: scale(1.05) translateY(-5%);
+}
+.cta {
+    height: 60px;
+    width: 155px;
+    background: var(--none);
+    color: var(--cta);
+    fill: var(--cta);
+    font-size: 100%;
+    font-weight: 700;
+    border: 3px solid var(--cta);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 300ms;
+}
+.cta:hover {
+    background: var(--cta);
+    color: #fff;
+    fill: #fff;
+    box-shadow: 0 1px 1px var(--shadow-primary), 
+                0 2px 2px var(--shadow-primary), 
+                0 4px 4px var(--shadow-primary), 
+                0 8px 8px var(--shadow-primary);
+    transform: scale(1.1) translateY(-5px);
+}
+.cta:active {
+    box-shadow: none;
+    transform: scale(.8) translateY(0);
+}
+.cta-with-icon {
+    display: inline-flex;
+    align-items: center;
+}
+.cta .cta-with-icon p {
+    font-size: 20px;
+}
+.cta-icon {
+    height: 25px;
+    width: auto;
+}
+.hover-red, .hover-green, .hover-blue {
+    transition: all 450ms;
+}
+.hover-red:hover {
+    color: red !important;
+}
+.hover-green:hover {
+    color: green !important;
+}
+.hover-blue:hover {
+    color: blue !important;
+} 
+.links {
+    display: flex;
+    width: 72%;
     align-items: center;
     justify-content: space-between;
+    animation: up-down 1200ms;
 }
-
-#cta {
-    height: 50px;
-    width: 120px;
-    background-color: #007aff;
-    color: #fff;
-    font-size: 100%;
-    font-weight: bold;
-    border: 2px solid #007aff;
-    border-radius: 12px;
-    cursor: pointer;
-    transition: all 150ms ease;
-}
-
-#cta:hover {
-    background-color: #fff;
-    color: #007aff;
-    border: 2px solid #007aff;
-}
-
-#cta:active {
-    transform: scale(0.8);
-}
-
 .links-icon {
-    height: 25px;
-    width: 25px;
-    transition: all 150ms ease;
+    height: 35px;
+    width: 35px;
+    fill: var(--secondary);
+    transition: all 300ms;
 }
-
 .links-icon:hover {
-    transform: scale(1.3) rotate(10deg);
-}
-
-.links-icon:active {
-    transform: scale(0.8) rotate(360deg);
-}
-
-/* Media Icons SVG - Change Color on Hover */
-#linkedin:hover {
-    fill: #0A66C2;
-}
-
-#github:hover {
-    fill: #333;
-}
-
-#instagram:hover {
-    fill: #EC1055;
-}
-
-#dribbble:hover {
-    fill: #EA4C89;
-}
-
-#discord:hover {
-    fill: #5865F2;
-}
-
-/* Collapsed right side menu */
-#menu {
-    position: absolute;
-    top: 5%;
-    right: 3%;
-    transition: all 300ms ease;
-}
-
-#menu-icon {
-    cursor: pointer;
     opacity: 100%;
-    transition: all 150ms ease;
+    fill: var(--cta);
+    filter: drop-shadow( 0 6px 6px var(--shadow-secondary)) 
+            drop-shadow( 0 8px 8px var(--shadow-secondary))
+            drop-shadow( 0 10px 10px var(--shadow-secondary)) 
+            drop-shadow( 0 12px 12px var(--shadow-secondary));
+    transform: scale(1.1) translateY(-5px);
 }
-
-#menu-items {
-    position: fixed;
-    top: 0;
-    right: 0;
-    padding-top: 5%;
-    height: 100%;
-    width: 0;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba( 255, 255, 255, 0.1 );
-    z-index: 1;
-    overflow: hidden;
-    transition: all 300ms ease;
+.links-icon:active {
+    opacity: 100%;
+    filter: none;
+    transform: scale(.8) translateY(0);
 }
-
-#menu-items a {
-    padding: 20px 40px;
-    text-decoration: none;
-    text-align: left;
-    font-size: 18px;
+.other-links {
+    margin-bottom: 8%;
+    margin-left: -2%;
+    font-size: 24px;
     font-weight: 500;
-    color: #000;
-    border-radius: 10px;
-    display: block;
-    transition: all 100ms ease;
+    color: var(--primary);
+    text-decoration: underline;
 }
-
-#menu-items a:hover {
-    background-color: #007aff;
-    color: #fff;
-    transform: scale(1.1);
-}
-
-#menu-items a:active {
-    transform: scale(0.9);
-}
-
-#menu-items #btn-close {
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 36px;
-    color: #333;
-    z-index: 2;
-}
-
-#menu-items #btn-close:hover {
-    background-color: rgba(255, 255, 255, 0);
-    color: #000;
-}
-
-#menu-items #btn-close:active {
-    transform: scale(0.8);
-}
-
-/* Credit section */
-#credit {
-    position: absolute;
-    left: 12%;
-    bottom: 3%;
-}
-
-#credit-text {
+.row {
+    margin: 12% -15px;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    font-size: 14px;
-    font-weight: 450;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
-
-#credit-text a {
-    display: flex;
-    align-items: center;
-    color: #000;
+.section-title {
+    animation: left-right 600ms;
 }
-
-/* 3D Object */
+.section-title h1 {
+    margin-right: 15px;
+    font-size: 42px;
+    font-weight: 600;
+}
+/* Object Section (Sorted by A-Z) */
+.line {
+    width: 50px;
+    height: 4px;
+    border-radius: 15px;
+    background: var(--primary);
+}
 #object {
-    position: absolute;
-    height: 100%;
-    width: 100%;
     z-index: -1;
 }
-
 #obj-1 {
     position: absolute;
     right: 0;
     bottom: 0;
+    z-index: -1;
 }
-
 #obj-1 img {
     height: 20vh;
     opacity: 60%;
 }
-
 #obj-2 {
     position: absolute;
     left: -9%;
     bottom: 0;
+    z-index: -1;
 }
-
 #obj-2 img {
     height: 65vh;
     opacity: 90%;
     filter: blur(7px);
 }
-
 #obj-3 {
     position: absolute;
     top: 5%;
     right: 0;
+    z-index: -1;
 }
-
 #obj-3 img {
     height: 22vh;
     opacity: 70%;
     filter: blur(3px);
 }
-
 #obj-4 {
     position: absolute;
     top: 24%;
     left: 26%;
+    z-index: -1;
     animation: obj-4 10s infinite;
 }
-
 #obj-4 img {
     height: 8vh;
     opacity: 90%;
     filter: blur(1.5px);
 }
-
 #obj-5 {
     position: absolute;
     top: 45%;
     left: 85%;
+    z-index: -1;
     animation: obj-5 15s infinite;
 }
-
 #obj-5 img {
     height: 10vh;
     opacity: 60%;
     filter: blur(1px);
 }
-
+/* Animation Section (Sorted by Usage) */
+@keyframes up-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%) scale(.8);
+    }
+    100% {
+        opacity: 100%;
+        transform: translateY(0) scale(1);
+    }
+}
+@keyframes down-up {
+    0% {
+        opacity: 0;
+        transform: translateY(100%) scale(.8);
+    }
+    100% {
+        opacity: 100%;
+        transform: translateY(0) scale(1);
+    }
+}
+@keyframes left-right {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%) scale(.8);
+    }
+    100% {
+        opacity: 100%;
+        transform: translateX(0) scale(1);
+    }
+}
+@keyframes right-left {
+    0% {
+        opacity: 0%;
+        transform: translateX(100%) scale(.8);
+    }
+    100% {
+        opacity: 100%;
+        transform: translateX(0) scale(1);
+    }
+}
+@keyframes up-down-static {
+    0%, 100% {
+        transform: translateY(-25%);
+    }
+    50% {
+        transform: translateY(25%);
+    }
+}
 @keyframes obj-4 {
     50% {
         transform: translate(210%, -100%) rotateZ(180deg);
     }
 }
-
 @keyframes obj-5 {
     50% {
         transform: translate(-230%, -250%) rotateZ(-180deg);
