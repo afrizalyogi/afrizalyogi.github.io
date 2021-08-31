@@ -193,7 +193,7 @@
     background: var(--secondary);
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--cta);
+    background: var(--secondary);
 }
 :root {
     --cta: #007aff;
@@ -441,15 +441,6 @@ section {
 .hover-red, .hover-green, .hover-blue {
     transition: all 450ms;
 }
-.hover-red:hover {
-    color: red !important;
-}
-.hover-green:hover {
-    color: green !important;
-}
-.hover-blue:hover {
-    color: blue !important;
-} 
 .links {
     display: flex;
     width: 72%;
