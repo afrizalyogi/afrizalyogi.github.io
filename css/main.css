@@ -24,6 +24,14 @@
         font-size: 26px;
     }
     /* CSS Class (Sorted by A-Z) */
+    div .cta {
+        height: 50px;
+        width: 115px;
+    }
+    div .links-icon {
+        height: 25px;
+        width: 25px;
+    }
     section div .row .col-text h2 {
         font-size: 36px;
     }
@@ -476,6 +484,18 @@ section {
     color: var(--primary);
     text-decoration: underline;
 }
+.other-links:hover {
+    color: var(--secondary);
+    text-decoration: none;
+}
+.readmore-links {
+    color: var(--primary);
+    text-decoration: underline;
+}
+.readmore-links:hover {
+    color: var(--secondary);
+    text-decoration: none;
+}
 .row {
     margin: 12% -15px;
     display: -ms-flexbox;
@@ -484,6 +504,7 @@ section {
     flex-wrap: wrap;
 }
 .section-title {
+    margin-bottom: -2%;
     animation: left-right 600ms;
 }
 .section-title h1 {
