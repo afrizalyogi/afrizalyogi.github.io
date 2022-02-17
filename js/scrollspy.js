@@ -81,4 +81,3 @@ el.addEventListener('mousedown', function() {
 el.addEventListener('mouseup', function() {
   el.style.transform = 'perspective(500px) scale(1.1) rotateX(0) rotateY(0)'
 })
-  
