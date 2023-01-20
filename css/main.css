@@ -46,6 +46,7 @@ body {
 }
 /* HTML Tag (Sorted by A-Z) */
 a {
+	color: var(--primary);
 	text-decoration: none;
 }
 img {
@@ -124,9 +125,7 @@ section {
 	animation: up-down-static 1500ms infinite;
 }
 /* About Section (Sorted by Used First) */
-#about-main .row .col div {
-	width: 70%;
-}
+
 /* Contact Section (Sorted by Used First) */
 #contact {
 	padding-bottom: 2%;
@@ -137,12 +136,10 @@ section {
 }
 #contact .row {
 	margin-top: 8%;
+	margin-bottom: 8%;
 }
 #contact-main .col-text {
 	margin-bottom: 6%;
-}
-#contact-main .links {
-	width: 90%;
 }
 /* CSS Class (Sorted by A-Z) */
 .about-text {
@@ -159,6 +156,14 @@ section {
 .container {
 	margin-left: 8%;
 	margin-right: 8%;
+}
+.col-2 {
+	-ms-flex-preferred-size: 0;
+	flex-basis: 0;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+	max-width: 20%;
+	animation: down-up 800ms;
 }
 .col-4 {
 	-ms-flex-preferred-size: 0;
@@ -200,9 +205,8 @@ section {
 	color: var(--secondary);
 }
 .col-img img {
-	margin-left: 20%;
-	width: 70%;
-	border-radius: 15px;
+	width: 100%;
+	border-radius: 14px;
 	box-shadow: 0 0px 4px var(--shadow-primary),
 		inset 0px 0px 10px var(--shadow-primary);
 	transition: all 1500ms;
@@ -249,6 +253,9 @@ section {
 	height: 25px;
 	width: auto;
 }
+.justify-content-start {
+	justify-content: start !important;
+}
 .links {
 	display: flex;
 	width: 72%;
@@ -276,17 +283,32 @@ section {
 	filter: none;
 	transform: scale(0.8) translateY(0);
 }
+.mb-0 {
+	margin-bottom: 0 !important;
+}
 .other-links {
-	margin-bottom: 8%;
-	margin-left: -2%;
-	font-size: 24px;
+	display: flex;
+	font-size: 18px;
 	font-weight: 500;
-	color: var(--primary);
-	text-decoration: underline;
+	color: var(--other);
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: center;
+	border: 2px solid var(--other);
+	border-radius: 36px;
+	padding: 18px 36px;
+	width: fit-content;
+	transition: all 300ms;
 }
 .other-links:hover {
-	color: var(--secondary);
-	text-decoration: none;
+	background: var(--cta);
+	color: var(--bg-primary);
+	background-color: var(--primary);
+	border: 2px solid var(--primary);
+	box-shadow: 0 1px 1px var(--shadow-primary), 0 2px 2px var(--shadow-primary),
+		0 4px 4px var(--shadow-primary), 0 8px 8px var(--shadow-primary);
+	transform: scale(1.1) translateY(-5px);
 }
 .readmore-links {
 	color: var(--primary);
@@ -297,11 +319,14 @@ section {
 	text-decoration: none;
 }
 .row {
-	margin: 12% -15px;
+	margin: 14% -15px;
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
+	gap: 6%;
+	justify-content: center;
+	align-items: center;
 }
 .section-title {
 	margin-bottom: -2%;
