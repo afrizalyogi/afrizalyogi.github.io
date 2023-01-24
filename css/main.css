@@ -42,7 +42,6 @@ body {
 	font-family: "Poppins", sans-serif;
 	color: var(--primary);
 	background: var(--bg-primary);
-	transition: all 300ms;
 }
 /* HTML Tag (Sorted by A-Z) */
 a {
@@ -92,6 +91,7 @@ section {
 	padding: 6% 8%;
 	box-shadow: 0 2px 2px var(--shadow-secondary),
 		0 6px 6px var(--shadow-secondary);
+	transition: all 300ms;
 }
 /* Loader */
 #load {
@@ -239,7 +239,8 @@ section {
 	font-size: 28px;
 	color: var(--secondary);
 }
-.col-text p {
+.col-text p,
+footer {
 	font-size: 22px;
 	color: var(--secondary);
 }
@@ -626,10 +627,6 @@ input:checked + .slider:before {
 		font-size: 28px;
 		color: var(--secondary);
 	}
-	.col-text p {
-		font-size: 22px;
-		color: var(--secondary);
-	}
 	.cta {
 		height: 65px;
 		width: 165px;
@@ -697,9 +694,6 @@ input:checked + .slider:before {
 	.col-text h3 {
 		margin-bottom: 5px;
 		font-size: 28px;
-	}
-	.col-text p {
-		font-size: 22px;
 	}
 	.cta {
 		height: 65px;
@@ -817,7 +811,8 @@ input:checked + .slider:before {
 	.col-text h3 {
 		font-size: 26px;
 	}
-	.col-text p {
+	.col-text p,
+	footer {
 		font-size: 20px;
 	}
 	.section-title {
@@ -851,6 +846,9 @@ input:checked + .slider:before {
 	#contact {
 		padding-bottom: 12%;
 	}
+	#contact .section-title {
+		padding-top: 12%;
+	}
 	#contact #contact-main h2 {
 		font-size: 22px;
 		margin-bottom: 6px;
@@ -873,7 +871,8 @@ input:checked + .slider:before {
 		margin-bottom: 12px;
 		font-size: 20px;
 	}
-	.col-text p {
+	.col-text p,
+	footer {
 		font-size: 16px;
 		color: var(--secondary);
 	}
