@@ -38,7 +38,7 @@ html {
 	scroll-behavior: smooth;
 }
 body {
-	min-width: 380px;
+	min-width: 395px;
 	font-family: "Poppins", sans-serif;
 	color: var(--primary);
 	background: var(--bg-primary);
@@ -53,16 +53,33 @@ img {
 	user-select: none;
 	-webkit-user-drag: none;
 }
-nav ul {
+nav {
+	display: inline-flex;
 	position: fixed;
-	top: 30%;
-	right: 4%;
-	font-size: 22px;
-	font-weight: 200;
-	line-height: 45px;
-	text-align: right;
+	justify-content: space-between;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 16px 6%;
+	background-color: var(--bg-primary);
+	text-align: center;
+	align-items: center;
+	color: var(--secondary);
+	box-shadow: 0 2px 2px var(--shadow-secondary),
+		0 6px 6px var(--shadow-secondary);
+	z-index: 9;
+}
+nav h2 {
+	font-size: 24px;
+}
+nav ul {
+	display: flex;
 	list-style: none;
-	animation: right-left 700ms;
+	align-items: center;
+	font-size: 18px;
+	font-weight: 200;
+	justify-content: space-between;
+	width: 45%;
 }
 nav ul li a {
 	color: var(--secondary);
@@ -73,24 +90,45 @@ nav ul li a:hover {
 section {
 	margin: 0 auto;
 	padding: 6% 8%;
+	box-shadow: 0 2px 2px var(--shadow-secondary),
+		0 6px 6px var(--shadow-secondary);
+}
+/* Loader */
+#load {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	color: var(--bg-primary);
+	justify-content: center;
+	align-items: center;
+	background-color: var(--cta);
+	z-index: 99;
+}
+#load svg {
+	width: 10%;
+	filter: invert(100%);
 }
 /* Home Section (Sorted by Used First) */
 #home {
-	padding: 4% 8%;
+	padding: 8%;
 }
 #home h2 {
 	color: var(--secondary);
 	font-weight: 500;
 }
 #home-main {
-	margin: 8% 6% 10% 6%;
-	width: 75%;
+	margin: 10% 6%;
+	width: 70%;
 }
 #home-main h1 {
 	margin-bottom: 8%;
 	font-size: 72px;
 	line-height: 90px;
-	animation: up-down 800ms;
+	animation: left-right 1200ms;
 }
 #home-main h1 b {
 	color: var(--bg-primary);
@@ -128,6 +166,7 @@ section {
 
 /* Contact Section (Sorted by Used First) */
 #contact {
+	margin-top: -6%;
 	padding-bottom: 2%;
 	background: var(--bg-primary);
 	border-radius: 40px 40px 0 0;
@@ -135,11 +174,11 @@ section {
 		inset 0px 0px 10px var(--shadow-primary);
 }
 #contact .row {
-	margin-top: 8%;
-	margin-bottom: 8%;
+	margin-top: 10%;
+	margin-bottom: 10%;
 }
 #contact-main .col-text {
-	margin-bottom: 6%;
+	margin-bottom: 8%;
 }
 /* CSS Class (Sorted by A-Z) */
 .about-text {
@@ -207,8 +246,8 @@ section {
 .col-img img {
 	width: 100%;
 	border-radius: 14px;
-	box-shadow: 0 0px 4px var(--shadow-primary),
-		inset 0px 0px 10px var(--shadow-primary);
+	box-shadow: 0 0px 6px var(--shadow-primary),
+		inset 0px 0px 12px var(--shadow-primary);
 	transition: all 1500ms;
 }
 .col-img img:hover {
@@ -226,7 +265,7 @@ section {
 	font-size: 100%;
 	font-weight: 700;
 	border: 3px solid var(--cta);
-	border-radius: 10px;
+	border-radius: 20px;
 	cursor: pointer;
 	transition: all 300ms;
 }
@@ -250,7 +289,7 @@ section {
 	font-size: 20px;
 }
 .cta-icon {
-	height: 25px;
+	height: 24px;
 	width: auto;
 }
 .justify-content-start {
@@ -258,10 +297,10 @@ section {
 }
 .links {
 	display: flex;
-	width: 72%;
+	width: 75%;
 	align-items: center;
 	justify-content: space-between;
-	animation: up-down 1200ms;
+	animation: left-right 1000ms;
 }
 .links-icon svg {
 	height: 35px;
@@ -344,7 +383,7 @@ section {
 	align-items: center;
 	justify-content: space-between;
 }
-.switch {
+/* .switch {
 	margin-top: 10%;
 	position: relative;
 	display: inline-block;
@@ -352,6 +391,10 @@ section {
 	border-radius: 34px;
 	width: 60px;
 	height: 24px;
+} */
+.switch {
+	position: relative;
+	display: inline-block;
 }
 /* Hide default HTML checkbox */
 .switch input {
@@ -505,6 +548,24 @@ input:checked + .slider:before {
 		transform: translateY(25%);
 	}
 }
+@keyframes pop-up {
+	0% {
+		opacity: 0%;
+		transform: scale(0);
+	}
+	100% {
+		opacity: 100%;
+		transform: scale(1);
+	}
+}
+@keyframes wipe-out-left {
+	from {
+		clip-path: inset(0 0 0 0);
+	}
+	to {
+		clip-path: inset(0 100% 0 0);
+	}
+}
 @keyframes obj-4 {
 	50% {
 		transform: translate(210%, -100%) rotateZ(180deg);
@@ -515,204 +576,332 @@ input:checked + .slider:before {
 		transform: translate(-230%, -250%) rotateZ(-180deg);
 	}
 }
-@media only screen and (max-width: 992px) {
-	/* Adjust style for large screen layout */
-	body section {
-		padding: 6%;
-		margin-bottom: 12%;
+
+@media (max-width: 1199.98px) {
+	/* HTML Tag (Sorted by A-Z) */
+	nav ul {
+		width: 55%;
 	}
-	body nav ul {
-		display: none;
-		visibility: hidden;
+	section {
+		padding: 10% 8%;
 	}
 	/* Home Section (Sorted by Used First) */
-	#home #home-main {
-		margin: 8% 2% 12% 2%;
-		width: 100%;
+	#home-main {
+		width: 80%;
+	}
+	#home-main h1 b {
+		color: var(--bg-primary);
+		text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+			1px 1px 0 #000;
+		-webkit-text-stroke: 2px var(--primary);
+	}
+	#scroll-down p {
+		font-size: 18px;
 	}
 	/* About Section (Sorted by Used First) */
-	section #about-main .row .col div {
-		width: 90%;
-	}
+
 	/* Contact Section (Sorted by Used First) */
-	body #contact {
-		padding-top: 6%;
-		margin-bottom: 0;
+	#contact {
+		padding-bottom: 4%;
 	}
-	#contact footer {
+	#contact-main .col-6 {
+		max-width: 80%;
+	}
+	/* CSS Class (Sorted by A-Z) */
+	.container {
+		margin-left: 6%;
+		margin-right: 6%;
+	}
+	.col-4 {
+		max-width: 100%;
+	}
+	.col-text h2 {
+		margin-bottom: 15px;
+		font-size: 42px;
+		line-height: 50px;
+		color: var(--primary);
+	}
+	.col-text h3 {
+		margin-bottom: 5px;
+		font-size: 28px;
+		color: var(--secondary);
+	}
+	.col-text p {
+		font-size: 22px;
+		color: var(--secondary);
+	}
+	.cta {
+		height: 65px;
+		width: 165px;
+	}
+	.cta .cta-with-icon p {
+		font-size: 24px;
+	}
+	.links {
+		width: 80%;
+	}
+	.links .links-icon svg {
+		height: 45px;
+		width: 45px;
+	}
+}
+
+@media only screen and (max-width: 991.98px) {
+	/* Adjust style for large screen layout */
+	/* HTML Tag (Sorted by A-Z) */
+	nav ul {
+		display: none;
+	}
+	section {
+		padding: 14%;
+	}
+	/* Home Section (Sorted by Used First) */
+	#home-main {
+		margin: 14% 0;
+		width: fit-content;
+	}
+	#home-main h1 b {
+		color: var(--bg-primary);
+		text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+			1px 1px 0 #000;
+		-webkit-text-stroke: 2px var(--primary);
+	}
+	#scroll-down p {
+		font-size: 18px;
+	}
+	/* About Section (Sorted by Used First) */
+	/* Contact Section (Sorted by Used First) */
+	#contact {
+		padding: 8%;
+		margin-bottom: 0;
 		margin-left: auto;
 		margin-right: auto;
 		text-align: center;
 	}
-	section #contact-main {
-		padding: 0 14%;
+	#contact-main {
 		margin-left: auto;
 		margin-right: auto;
 	}
-	section #contact-main .links {
+	#contact-main .links {
 		margin-left: auto;
 		margin-right: auto;
+	}
+	#contact-main .justify-content-start {
+		justify-content: center !important;
 	}
 	/* CSS Class (Sorted by A-Z) */
-	div .links {
-		width: 85%;
+	.col-text h2 {
+		margin-bottom: 15px;
+		font-size: 42px;
 	}
-	section .section-title {
+	.col-text h3 {
+		margin-bottom: 5px;
+		font-size: 28px;
+	}
+	.col-text p {
+		font-size: 22px;
+	}
+	.cta {
+		height: 65px;
+		width: 165px;
+	}
+	.cta .cta-with-icon p {
+		font-size: 24px;
+	}
+	.links {
+		width: 90%;
+	}
+	.links .links-icon svg {
+		height: 45px;
+		width: 45px;
+	}
+	.section-title {
 		display: flex;
 		justify-content: center;
 		margin-left: auto;
 		margin-right: auto;
+		margin-bottom: 18%;
 	}
-	section .section-title h1 {
+	.section-title h1 {
 		margin-right: 0;
 		text-align: center;
 	}
 	.section-title .block-sm {
 		display: block;
 	}
-	.row .col-4 {
+	.col-2.col-text {
+		margin: 0 auto 0 auto;
+	}
+	.col-4 {
 		-ms-flex-preferred-size: 100%;
 		flex-basis: 100%;
-		max-width: 100%;
-	}
-	.row .col-6 {
-		-ms-flex-preferred-size: 100%;
-		flex-basis: 100%;
-		max-width: 100%;
-	}
-	.row .col {
-		-ms-flex-preferred-size: 100%;
-		flex-basis: 100%;
-		margin-bottom: 18%;
-	}
-	.row .col-text {
-		margin: 0 auto 8% auto;
-		text-align: center;
-		max-width: 100%;
-	}
-	.row .col-img img {
 		width: 100%;
-		display: flex;
-		padding-left: 0;
-		margin-left: auto;
-		margin-right: auto;
 	}
-	section .section-title {
-		margin-bottom: 10%;
+	.col-6 {
+		-ms-flex-preferred-size: 100%;
+		flex-basis: 100%;
+		max-width: 100%;
 	}
-	div .other-links {
-		display: flex;
-		margin: -10% auto 0 auto;
-		justify-content: center;
-		text-align: center;
+	.col {
+		-ms-flex-preferred-size: 100%;
+		flex-basis: 100%;
 	}
-	#about #about-main .row .col-text div {
-		margin-left: auto;
-		margin-right: auto;
-		text-align: center;
+	.col-text {
+		margin: 0 auto 18% auto;
+		max-width: 100%;
 	}
-	div .about-text {
-		margin-bottom: 14%;
-	}
-	/* Object Section (Sorted by A-Z) */
-	div .line {
-		margin-left: auto;
-		margin-right: auto;
-	}
-}
-@media only screen and (max-width: 768px) {
-	/* Adjust style for medium screen layout */
-	body section {
+	.col-img {
 		margin-bottom: 6%;
 	}
-	/* Home Section (Sorted by Used First) */
-	/* Portfolio Section (Sorted by Used First) */
-	/* About Section (Sorted by Used First) */
-	/* Contact Section (Sorted by Used First) */
-	body section #contact-main {
-		padding: 8%;
+	.col-img img {
+		border-radius: 36px;
 	}
-	/* CSS Class (Sorted by A-Z) */
-	div .row .col-text h2 {
-		font-size: 38px;
-	}
-	div .row .col-text h3 {
-		font-size: 26px;
-	}
-	div .row .col-text p {
-		font-size: 20px;
-	}
-}
-@media only screen and (max-width: 576px) {
-	/* Adjust style for small/mobile screen layout */
-	html body section {
-		margin-bottom: 28%;
-	}
-	/* Home Section (Sorted by Used First) */
-	body #home-main h1 {
-		margin-bottom: 24%;
-		font-size: 54px;
-		line-height: 70px;
-	}
-	body #home h2 {
-		font-size: 20px;
-		margin-bottom: 14%;
-	}
-	/* Portfolio Section (Sorted by Used First) */
-	body #showcase #showcase-main .row .col-text {
-		max-width: 100%;
-	}
-	/* About Section (Sorted by Used First) */
-	body #about #about-main .row .col-text div {
-		width: 100%;
-	}
-	/* Contact Section (Sorted by Used First) */
-	html body section #contact-main {
-		padding: 4%;
-	}
-	#contact-main .row div .col-text h2 {
-		font-size: 26px;
-	}
-	body #contact-main .links {
-		width: 80%;
-		margin-bottom: 0;
-	}
-	/* CSS Class (Sorted by A-Z) */
-	section div .cta {
-		height: 50px;
-		width: 100%;
-		margin-bottom: 10%;
-	}
-	section div .row .col-text {
-		text-align: justify;
-	}
-	section div .row .col-text h2 {
-		font-size: 28px;
-	}
-	section div .row .col-text h3 {
-		font-size: 20px;
-	}
-	section div .row .col-text p {
-		font-size: 16px;
-	}
-	section .section-title {
+	.about-text {
 		margin-bottom: 18%;
 	}
-	section .section-title h1 {
+	/* Object Section (Sorted by A-Z) */
+	.line {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+@media only screen and (max-width: 767.98px) {
+	/* Adjust style for medium screen layout */
+	/* HTML Tag (Sorted by A-Z) */
+	/* Home Section (Sorted by Used First) */
+	#home-main {
+		margin: 24% 0;
+	}
+	#home-main h1 {
+		margin-bottom: 12%;
+	}
+	/* Portfolio Section (Sorted by Used First) */
+	/* About Section (Sorted by Used First) */
+	/* Contact Section (Sorted by Used First) */
+	#contact {
+		padding: 8% 4%;
+	}
+	#contact .section-title {
+		margin-bottom: 12%;
+	}
+	#contact #contact-main h2 {
 		font-size: 26px;
 	}
-	section div .links {
-		width: 94%;
+	#contact #contact-main .col-text {
+		margin-bottom: 12%;
+	}
+	/* CSS Class (Sorted by A-Z) */
+	.links {
 		display: block;
-		margin-bottom: 28%;
 	}
-	section div .links .links-icon svg {
-		height: 26px;
-		width: 26px;
+	.links .cta {
+		width: 100%;
+		margin-bottom: 12%;
 	}
-	section div .links .social-media-cta {
-		margin-left: 0;
+	.links .social-media-cta {
 		display: flex;
 		justify-content: space-between;
+		margin-left: auto;
+		margin-right: auto;
+		width: 90%;
+	}
+	.row {
+		margin: 24% 0;
+	}
+	.col-img img {
+		border-radius: 16px;
+	}
+	.col-text h2 {
+		font-size: 38px;
+	}
+	.col-text h3 {
+		font-size: 26px;
+	}
+	.col-text p {
+		font-size: 20px;
+	}
+	.section-title {
+		margin-bottom: 24%;
+	}
+}
+@media only screen and (max-width: 575.98px) {
+	/* Adjust style for small/mobile screen layout */
+	/* HTML Tag (Sorted by A-Z) */
+	nav h2 {
+		font-size: 20px;
+	}
+	section {
+		padding: 24% 6%;
+	}
+	/* Home Section (Sorted by Used First) */
+	#home {
+		padding: 18% 10%;
+	}
+	#home-main {
+		margin: 24% auto;
+	}
+	#home-main h1 {
+		font-size: 56px;
+		line-height: 64px;
+		margin-bottom: 24%;
+	}
+	/* About Section (Sorted by Used First) */
+
+	/* Contact Section (Sorted by Used First) */
+	#contact {
+		padding-bottom: 12%;
+	}
+	#contact #contact-main h2 {
+		font-size: 22px;
+		margin-bottom: 6px;
+	}
+	/* CSS Class (Sorted by A-Z) */
+	.container {
+		margin-left: 6%;
+		margin-right: 6%;
+	}
+	.col-img img {
+		border-radius: 12px;
+		margin-bottom: 12px;
+	}
+	.col-text h2 {
+		margin-bottom: 24px;
+		font-size: 32px;
+		line-height: 40px;
+	}
+	.col-text h3 {
+		margin-bottom: 12px;
+		font-size: 20px;
+	}
+	.col-text p {
+		font-size: 16px;
+		color: var(--secondary);
+	}
+	.cta {
+		height: 60px;
+		border-radius: 16px;
+	}
+	.cta .cta-with-icon p {
+		font-size: 22px;
+	}
+	.cta .cta-with-icon svg {
+		height: 24px;
+	}
+	.links {
+		width: 100%;
+	}
+	.links .links-icon svg {
+		height: 40px;
+		width: 40px;
+	}
+	.other-links {
+		margin-top: -48px;
+		font-size: 14px;
+		font-weight: 500;
+		border-radius: 36px;
+		padding: 12px 24px;
+	}
+	.section-title h1 {
+		font-size: 28px;
 	}
 }
