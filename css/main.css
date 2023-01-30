@@ -298,7 +298,7 @@ footer {
 }
 .links {
 	display: flex;
-	width: 75%;
+	width: 60%;
 	align-items: center;
 	justify-content: space-between;
 	animation: left-right 1000ms;
