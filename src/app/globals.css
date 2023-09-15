@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		--blue-primary: #007aff;
+		--blue-secondary: rgba(0, 122, 255, 0.8);
+		--black-primary: #111;
+		--black-secondary: #3f3f3f;
+		--white-primary: #fbf8f6;
+		--white-secondary: #eaeaea;
+	}
+}
+
+body {
+	scroll-behavior: smooth;
+}
+
+body,
+a {
+	transition: 300ms;
+}
+
+a:hover {
+	color: #007aff;
+}
+
+#hamburger {
+	cursor: pointer;
+}
+.hamburger-1 {
+	width: 36px;
+	height: 5px;
+	margin-bottom: 5px;
+	border-radius: 4px;
+}
+
+.hamburger-2 {
+	width: 24px;
+	height: 5px;
+	margin-left: auto;
+	border-radius: 4px;
+}
+
+#hero-text b,
+.section-title p b {
+	color: var(--white-primary);
+	text-shadow: -1px -1px 0 #111, 1px -1px 0 #111, -1px 1px 0 #111,
+		1px 1px 0 #111;
+	-webkit-text-stroke: 1px var(--black-primary);
+}
+
+html.dark #hero-text b,
+html.dark .section-title p b {
+	color: var(--black-primary);
+	text-shadow: -1px -1px 0 #fbf8f6, 1px -1px 0 #fbf8f6, -1px 1px 0 #fbf8f6,
+		1px 1px 0 #fbf8f6;
+	-webkit-text-stroke: 1px var(--white-primary);
+}
+
+#profile-triangle {
+	z-index: 1;
+}
+
+#profile-circle {
+	z-index: -1;
+}
+
+#profile-base,
+#profile-triangle,
+#profile-circle {
+	transition: 300ms;
+}
+
+.line {
+	width: 50px;
+	height: 4px;
+	border-radius: 15px;
+	background: var(--black-primary);
+}
