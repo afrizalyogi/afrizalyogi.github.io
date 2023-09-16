@@ -14,6 +14,7 @@
 }
 
 body {
+	min-width: 340px;
 	scroll-behavior: smooth;
 }
 
@@ -26,9 +27,11 @@ a:hover {
 	color: #007aff;
 }
 
-#hamburger {
-	cursor: pointer;
+#hamburger:hover .hamburger-1,
+#hamburger:hover .hamburger-2 {
+	background: var(--black-primary);
 }
+
 .hamburger-1 {
 	width: 36px;
 	height: 5px;
@@ -77,5 +80,4 @@ html.dark .section-title p b {
 	width: 50px;
 	height: 4px;
 	border-radius: 15px;
-	background: var(--black-primary);
 }

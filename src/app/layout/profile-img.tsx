@@ -28,7 +28,8 @@ export function ProfileTriangle() {
 	return (
 		<img
 			id="profile-triangle"
-			className="absolute blur-sm drop-shadow-xl"
+			className="absolute blur-sm drop-shadow-xl w-20
+			xl:w-auto"
 			src="assets/profile/triangle.png"
 			alt=""
 			style={{
@@ -58,7 +59,8 @@ export function ProfileBase() {
 	return (
 		<img
 			id="profile-base"
-			className="drop-shadow-xl"
+			className="drop-shadow-xl w-64
+			xl:w-auto"
 			src="assets/profile/profile-with-bg.png"
 			alt=""
 			style={{
@@ -88,11 +90,12 @@ export function ProfileCircle() {
 	return (
 		<img
 			id="profile-circle"
-			className="absolute drop-shadow-xl"
+			className="absolute drop-shadow-xl w-28 -ml-12
+			xl:w-auto xl:ml-0"
 			src="assets/profile/circle.png"
 			alt=""
 			style={{
-				transform: `translate(224px, 0) translate(${offset.x}px, ${offset.y}px)`,
+				transform: `translate(192px, 12px) translate(${offset.x}px, ${offset.y}px)`,
 			}}
 		/>
 	)

@@ -1,0 +1,18 @@
+[
+	{
+		"title": "Novacademy",
+		"description": "Website that helps individuals in Indonesia understand and implement business fundamentals by providing special training to solve practical cases",
+		"image": "assets/carousel/novacademy.png",
+		"categories": ["User Research", "User Experience", "Prototype"],
+		"linkTitle": ["View Study Case", "Live Preview"],
+		"linkUrl": ["#", "#"]
+	},
+	{
+		"title": "Novacademy",
+		"description": "Website that helps individuals in Indonesia understand and implement business fundamentals by providing special training to solve practical cases",
+		"image": "assets/carousel/novacademy.png",
+		"categories": ["User Experience", "Prototype"],
+		"linkTitle": ["View GitHub Repo", "Live Preview"],
+		"linkUrl": ["#", "#"]
+	}
+]
