@@ -21,8 +21,8 @@ import Carousel from "./layout/carousel"
 export default function Home() {
 	return (
 		<main
-			className="pt-24 px-6 sm:px-12
-		lg:px-48 ">
+			className="pt-24 px-6 sm:px-12 
+			lg:px-48 ">
 			<section
 				id="hero"
 				className="flex flex-wrap-reverse justify-center items-center pt-16 pb-24
@@ -30,7 +30,7 @@ export default function Home() {
 				<div id="hero-text">
 					<h1
 						className="
-          text-5xl text-center font-bold leading-tight max-w-3xl pb-12 drop-shadow-lg
+          text-5xl text-center font-bold leading-tight max-w-3xl pb-12 drop-shadow-xl
           md:text-6xl
 					lg:pb-16
 					xl:text-left
@@ -91,10 +91,10 @@ export default function Home() {
 					<ProfileTriangle></ProfileTriangle>
 				</div>
 			</section>
-			<section id="showcase" className="py-16">
+			<section id="showcase" className="py-20">
 				<div className="section-title sm:mb-6 lg:mb-12">
 					<p
-						className="text-5xl absolute left-0 right-0 text-center text-black-secondary -z-10 -mt-6 opacity-10
+						className="text-5xl absolute left-0 right-0 text-center text-black-secondary -mt-6 opacity-10
           	sm:text-7xl sm:-mt-12
 						lg:right-auto lg:left-24 lg:text-8xl 
 						xl:-mt-16
@@ -139,10 +139,10 @@ export default function Home() {
 					</Link>
 				</div>
 			</section>
-			<section id="about" className="py-16">
+			<section id="about" className="py-20">
 				<div className="section-title sm:mb-6 lg:mb-12">
 					<p
-						className="text-5xl absolute left-0 right-0 text-center text-black-secondary -z-10 -mt-6 opacity-10
+						className="text-5xl absolute left-0 right-0 text-center text-black-secondary -mt-6 opacity-10
           	sm:text-7xl sm:-mt-12
 						lg:right-auto lg:left-24 lg:text-8xl 
 						xl:-mt-16
@@ -164,8 +164,8 @@ export default function Home() {
 				</div>
 				<div className="section-content">
 					<div className="grid xl:grid-cols-3 gap-6">
-						<div className="rounded-xl border-2 p-6 pt-14 mt-16 lg:mt-12">
-							<div className="absolute p-4 border-2 rounded-xl -mt-24 mx-auto bg-white-primary dark:bg-black-primary">
+						<div className="drop-shadow-lg rounded-xl border-2 p-6 pt-14 mt-16 lg:mt-12">
+							<div className="absolute p-4 border-2 rounded-xl -mt-24 mx-auto bg-white-primary dark:bg-black-secondary">
 								<FontAwesomeIcon
 									icon={faPuzzlePiece}
 									className="text-4xl lg:text-5xl"
@@ -177,8 +177,8 @@ export default function Home() {
 								things quickly.
 							</p>
 						</div>
-						<div className="rounded-xl border-2 p-6 pt-14 mt-16 lg:mt-12">
-							<div className="absolute p-4 border-2 rounded-xl -mt-24 mx-auto bg-white-primary dark:bg-black-primary">
+						<div className="drop-shadow-lg rounded-xl border-2 p-6 pt-14 mt-16 lg:mt-12">
+							<div className="absolute p-4 border-2 rounded-xl -mt-24 mx-auto bg-white-primary dark:bg-black-secondary">
 								<FontAwesomeIcon
 									icon={faMugHot}
 									className="text-4xl lg:text-5xl"
@@ -190,8 +190,8 @@ export default function Home() {
 								that I can do it with faster way but still with a great results.
 							</p>
 						</div>
-						<div className="rounded-xl border-2 p-6 pt-14 mt-16 lg:mt-12">
-							<div className="absolute p-4 border-2 rounded-xl -mt-24 mx-auto bg-white-primary dark:bg-black-primary">
+						<div className="drop-shadow-lg rounded-xl border-2 p-6 pt-14 mt-16 lg:mt-12">
+							<div className="absolute p-4 border-2 rounded-xl -mt-24 mx-auto bg-white-primary dark:bg-black-secondary">
 								<FontAwesomeIcon
 									icon={faPalette}
 									className="text-4xl lg:text-5xl"

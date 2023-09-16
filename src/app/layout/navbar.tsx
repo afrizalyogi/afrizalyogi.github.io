@@ -18,10 +18,10 @@ export default function Navbar() {
 	return (
 		<nav
 			id="top"
-			className="block fixed mx-auto px-6 py-6 w-full z-50 items-center justify-between bg-white-primary dark:bg-black-primary
+			className="block fixed mx-auto px-6 py-6 w-full z-50 items-center justify-between bg-white-primary dark:bg-black-secondary
 			sm:px-12
 			lg:px-48">
-			<div className="flex gap-4 items-center justify-between text-black-secondary  dark:text-white-secondary ">
+			<div className="flex gap-4 items-center justify-between text-black-secondary dark:text-white-secondary ">
 				<Link
 					href="/"
 					className="text-xl sm:text-2xl font-bold text-black-secondary hover:text-black-primary dark:text-white-secondary dark:hover:text-white-primary">
@@ -32,8 +32,8 @@ export default function Navbar() {
 						id="hamburger"
 						className="text-right cursor-pointer scale-75 sm:scale-100"
 						onClick={() => setIsShow(true)}>
-						<div className="hamburger-1 bg-black-secondary"></div>
-						<div className="hamburger-2 bg-black-secondary"></div>
+						<div className="hamburger-1 bg-black-secondary dark:bg-white-secondary"></div>
+						<div className="hamburger-2 bg-black-secondary dark:bg-white-secondary"></div>
 					</div>
 				) : (
 					<div

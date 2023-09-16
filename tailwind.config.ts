@@ -1,4 +1,4 @@
-import type { Config } from "tailwindcss";
+import type { Config } from "tailwindcss"
 
 const config: Config = {
 	content: [
@@ -11,7 +11,7 @@ const config: Config = {
 			"blue-primary": "#007AFF",
 			"blue-secondary": "rgba(0, 122, 255, 0.8)",
 			"black-primary": "#111",
-			"black-secondary": "#3f3f3f",
+			"black-secondary": "#1f1f22",
 			"white-primary": "#FBF8F6",
 			"white-secondary": "#eaeaea",
 		},
@@ -25,5 +25,5 @@ const config: Config = {
 	},
 	plugins: [],
 	darkMode: "class",
-};
-export default config;
+}
+export default config

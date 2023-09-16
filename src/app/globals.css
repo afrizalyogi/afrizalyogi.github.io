@@ -32,6 +32,11 @@ a:hover {
 	background: var(--black-primary);
 }
 
+html.dark #hamburger:hover .hamburger-1,
+html.dark #hamburger:hover .hamburger-2 {
+	background: var(--white-primary);
+}
+
 .hamburger-1 {
 	width: 36px;
 	height: 5px;
@@ -60,14 +65,6 @@ html.dark .section-title p b {
 	text-shadow: -1px -1px 0 #fbf8f6, 1px -1px 0 #fbf8f6, -1px 1px 0 #fbf8f6,
 		1px 1px 0 #fbf8f6;
 	-webkit-text-stroke: 1px var(--white-primary);
-}
-
-#profile-triangle {
-	z-index: 1;
-}
-
-#profile-circle {
-	z-index: -1;
 }
 
 #profile-base,

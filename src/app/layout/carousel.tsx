@@ -55,7 +55,7 @@ export default function Carousel() {
 					">
 					<FontAwesomeIcon
 						icon={faChevronLeft}
-						className="text-white-primary dark:text-black-primary
+						className="text-white-primary
 						xl:text-2xl
 						"
 					/>
@@ -67,7 +67,7 @@ export default function Carousel() {
 					">
 					<FontAwesomeIcon
 						icon={faChevronRight}
-						className="text-white-primary dark:text-black-primary
+						className="text-white-primary
 						xl:text-2xl
 						"
 					/>
@@ -92,22 +92,25 @@ export default function Carousel() {
 							{currentSlide.categories.map((category, index) => (
 								<span
 									key={index}
-									className="carousel-categor text-xs sm:text-sm px-4 py-2 border-2 rounded-3xl text-black-secondary items-center flex hover:text-black-primary hover:border-black-primary
+									className="carousel-categor text-xs sm:text-sm px-3 py-2 rounded-3xl text-black-secondary items-center flex bg-white-secondary dark:bg-black-primary dark:text-white-secondary
                 ">
 									{category}
 								</span>
 							))}
 						</div>
 					</div>
-					<div className="right">
-						<p className="carousel-description mb-4 text-sm lg:text-lg">
+					<div className="right text-black-secondary dark:text-white-secondary">
+						<p className="carousel-description w-3/4 mx-auto lg:mx-0 lg:w-auto mb-4 text-sm lg:text-lg ">
 							{currentSlide.description}
 						</p>
 						<div
 							className="flex gap-6 justify-center text-sm lg:justify-start
 							lg:text-lg">
 							{currentSlide.linkTitle.map((title, index) => (
-								<Link href={currentSlide.linkUrl[index]} className="underline">
+								<Link
+									href={currentSlide.linkUrl[index]}
+									className="underline"
+									target="_blank">
 									<FontAwesomeIcon icon={faLink} className="mr-2" />
 									{title}
 								</Link>

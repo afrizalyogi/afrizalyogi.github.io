@@ -7,11 +7,8 @@ export default function BackToTop() {
 		<section id="back-to-top">
 			<Link
 				href="#top"
-				className="rounded-full fixed flex items-center justify-center bottom-12 right-12 border-2 h-8 w-8 bg-white-primary border-black-secondary dark:bg-black-primary dark:border-white-secondary">
-				<FontAwesomeIcon
-					icon={faChevronUp}
-					className="text-black-primary text-xl -m-1 dark:text-white-primary"
-				/>
+				className="rounded-full fixed flex items-center justify-center bottom-12 right-12 border-2 h-8 w-8 bg-none border-white-primary">
+				<FontAwesomeIcon icon={faChevronUp} className="text-white-primary" />
 			</Link>
 		</section>
 	)

@@ -1,18 +1,58 @@
 [
 	{
-		"title": "Novacademy",
-		"description": "Website that helps individuals in Indonesia understand and implement business fundamentals by providing special training to solve practical cases",
-		"image": "assets/carousel/novacademy.png",
-		"categories": ["User Research", "User Experience", "Prototype"],
-		"linkTitle": ["View Study Case", "Live Preview"],
-		"linkUrl": ["#", "#"]
+		"title": "LetsOut Travel Booking",
+		"description": "Slicing design into a responsive travel website from scratch using HTML, Pure CSS, and Vanilla JavaScript.",
+		"image": "assets/carousel/showcase-1.png",
+		"categories": ["HTML", "Pure CSS", "Vanilla JavaScript"],
+		"linkTitle": ["View GitHub Repo", "Live Preview"],
+		"linkUrl": [
+			"https://github.com/afrizalyogi/letsout-travel",
+			"https://letsout-travel-web.vercel.app/"
+		]
 	},
 	{
-		"title": "Novacademy",
-		"description": "Website that helps individuals in Indonesia understand and implement business fundamentals by providing special training to solve practical cases",
-		"image": "assets/carousel/novacademy.png",
-		"categories": ["User Experience", "Prototype"],
+		"title": "Ramadhan 2023 Countdown",
+		"description": "Website project based on HTML, CSS and JavaScript that show the countdown time of Ramadan 2023.",
+		"image": "assets/carousel/showcase-2.png",
+		"categories": ["HTML", "CSS", "JavaScript"],
 		"linkTitle": ["View GitHub Repo", "Live Preview"],
-		"linkUrl": ["#", "#"]
+		"linkUrl": [
+			"https://github.com/afrizalyogi/event-countdown",
+			"https://ramadhan2023-countdown.vercel.app/"
+		]
+	},
+	{
+		"title": "Persona (Personality Analysis)",
+		"description": "A simple application designed and has a neutral color to reduce user distraction when taking personality tests.",
+		"image": "assets/carousel/showcase-3.png",
+		"categories": ["UI Design", "UX Research"],
+		"linkTitle": ["View Projects"],
+		"linkUrl": [
+			"https://drive.google.com/drive/folders/1Pjn9IpkMOFMbeee3rhuEt1j49jE13GZ5"
+		]
+	},
+	{
+		"title": "Persona (Personality Analysis)",
+		"description": "Create an interconnection and relationships structure between application pages.",
+		"image": "assets/carousel/showcase-4.png",
+		"categories": ["Semantic Network"],
+		"linkTitle": ["View Image"],
+		"linkUrl": ["/assets/carousel/showcase-4.png"]
+	},
+	{
+		"title": "iReminder App",
+		"description": "Designing the entities, attributes, and relationships that will be required on a reminder app.",
+		"image": "assets/carousel/showcase-5.png",
+		"categories": ["Database Design"],
+		"linkTitle": ["View Image"],
+		"linkUrl": ["/assets/carousel/showcase-5.png"]
+	},
+	{
+		"title": "Hidayat Travel Bureau",
+		"description": "Designing the entities, attributes, and relationships that will be required on a travel website database.",
+		"image": "assets/carousel/showcase-6.png",
+		"categories": ["Database Design"],
+		"linkTitle": ["View Image"],
+		"linkUrl": ["/assets/carousel/showcase-6.png"]
 	}
 ]

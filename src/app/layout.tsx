@@ -25,14 +25,12 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body
-				className={
-					poppins.className +
-					"bg-white-primary text-black-primary dark:bg-black-primary dark:text-white-primary"
-				}>
+			<body className={poppins.className}>
 				<ThemeProvider attribute="class">
 					<Navbar></Navbar>
-					{children}
+					<div className="bg-white-primary text-black-primary dark:bg-black-secondary dark:text-white-primary">
+						{children}
+					</div>
 					<BackToTop></BackToTop>
 					<Footer></Footer>
 				</ThemeProvider>
