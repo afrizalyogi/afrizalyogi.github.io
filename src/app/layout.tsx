@@ -1,12 +1,7 @@
-"use client"
 import "./globals.css"
 import type { Metadata } from "next"
 import { Poppins } from "next/font/google"
-import { ThemeProvider } from "next-themes"
-
-import Navbar from "./layout/navbar"
-import Footer from "./layout/footer"
-import BackToTop from "./layout/back-to-top"
+import Wrapper from "./wrapper"
 
 const poppins = Poppins({
 	subsets: ["latin"],
@@ -26,14 +21,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body className={poppins.className}>
-				<ThemeProvider attribute="class">
-					<Navbar></Navbar>
-					<div className="bg-white-primary text-black-primary dark:bg-black-secondary dark:text-white-primary">
-						{children}
-					</div>
-					<BackToTop></BackToTop>
-					<Footer></Footer>
-				</ThemeProvider>
+				<Wrapper>{children}</Wrapper>
 			</body>
 		</html>
 	)
