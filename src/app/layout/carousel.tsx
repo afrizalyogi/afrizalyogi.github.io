@@ -31,7 +31,7 @@ export default function Carousel() {
 				navigation
 				loop={true}>
 				{showcaseData.map((item, index) => (
-					<SwiperSlide className="bg-white-primary carousel-content">
+					<SwiperSlide className="bg-white-primary dark:bg-black-bg carousel-content">
 						{({ isActive }) => (
 							<div className={isActive ? "" : "hidden"}>
 								<img
