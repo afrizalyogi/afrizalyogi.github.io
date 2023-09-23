@@ -13,6 +13,7 @@ export default function ChangeTheme() {
 	if (!mounted) {
 		return null
 	}
+
 	return (
 		<div className="text-xl flex items-center text-black-secondary dark:text-white-secondary">
 			<span

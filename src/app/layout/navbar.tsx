@@ -18,7 +18,7 @@ export default function Navbar() {
 	return (
 		<nav
 			id="top"
-			className="block fixed mx-auto px-6 py-6 w-full z-50 items-center justify-between bg-white-primary dark:bg-black-secondary
+			className="block fixed mx-auto px-6 py-6 w-full z-50 items-center justify-between bg-white-primary dark:bg-black-bg
 			sm:px-12
 			lg:px-48">
 			<div className="flex gap-4 items-center justify-between text-black-secondary dark:text-white-secondary ">
@@ -74,29 +74,32 @@ export default function Navbar() {
 													route === "/"
 														? "font-bold  text-black-primary dark:text-white-primary"
 														: ""
-												}>
+												}
+												onClick={() => setIsShow(false)}>
 												Home
 											</Link>
 										</li>
 										<li className="py-4 lg:py-8">
 											<Link
-												href="/"
+												href="/projects"
 												className={
 													route === "/projects"
 														? "font-bold  text-black-primary dark:text-white-primary"
 														: ""
-												}>
+												}
+												onClick={() => setIsShow(false)}>
 												Projects
 											</Link>
 										</li>
 										<li className="py-4 lg:py-8">
 											<Link
-												href="/"
+												href="/services"
 												className={
 													route === "/services"
 														? "font-bold  text-black-primary dark:text-white-primary"
 														: ""
-												}>
+												}
+												onClick={() => setIsShow(false)}>
 												Services
 											</Link>
 										</li>
@@ -111,34 +114,37 @@ export default function Navbar() {
                     2xl:text-5xl">
 										<li className="py-4 lg:py-8">
 											<Link
-												href="/"
+												href="/certificates"
 												className={
 													route === "/certificates"
 														? "font-bold  text-black-primary dark:text-white-primary"
 														: ""
-												}>
+												}
+												onClick={() => setIsShow(false)}>
 												Certificates
 											</Link>
 										</li>
 										<li className="py-4 lg:py-8">
 											<Link
-												href="/"
+												href="/about"
 												className={
 													route === "/about"
 														? "font-bold  text-black-primary dark:text-white-primary"
 														: ""
-												}>
+												}
+												onClick={() => setIsShow(false)}>
 												About me
 											</Link>
 										</li>
 										<li className="py-4 lg:py-8">
 											<Link
-												href="/"
+												href="/blog"
 												className={
 													route === "/blog"
 														? "font-bold  text-black-primary dark:text-white-primary"
 														: ""
-												}>
+												}
+												onClick={() => setIsShow(false)}>
 												Blog
 											</Link>
 										</li>

@@ -39,7 +39,7 @@ export default function Footer() {
 							sm:text-2xl
 							lg:text-4xl">
 				Let's collaborate! just reach me <br /> out -{" "}
-				<Link href="mailto:afrizalyogi.id@gmail.com" target="_blank">
+				<Link href={"mailto:afrizalyogi.id@gmail.com"} target="_blank">
 					afrizalyogi.id@gmail.com
 				</Link>
 			</h1>

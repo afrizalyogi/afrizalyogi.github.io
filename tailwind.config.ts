@@ -11,9 +11,10 @@ const config: Config = {
 			"blue-primary": "#007AFF",
 			"blue-secondary": "rgba(0, 122, 255, 0.8)",
 			"black-primary": "#111",
-			"black-secondary": "#1f1f22",
+			"black-secondary": "#3f3f3f",
+			"black-bg": "#1f1f22",
 			"white-primary": "#FBF8F6",
-			"white-secondary": "#eaeaea",
+			"white-secondary": "#dcdcdc",
 		},
 		extend: {
 			backgroundImage: {
