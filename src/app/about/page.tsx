@@ -14,7 +14,6 @@ import {
 	ProfileCircle,
 } from "../layout/profile-img"
 import AboutMe from "../layout/about-me"
-import LicenseCarousel from "./layout/license-carousel"
 
 export default function Home() {
 	return (
