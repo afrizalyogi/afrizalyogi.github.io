@@ -12,9 +12,9 @@ interface WrapperProps {
 
 export default function Wrapper({ children }: WrapperProps) {
 	return (
-		<ThemeProvider attribute="class">
+		<ThemeProvider attribute="class" defaultTheme="light">
 			<Navbar></Navbar>
-			<div className="bg-white-primary text-black-primary dark:bg-black-secondary dark:text-white-primary">
+			<div className="bg-white-primary text-black-primary dark:bg-black-bg dark:text-white-primary">
 				{children}
 			</div>
 			<BackToTop></BackToTop>
