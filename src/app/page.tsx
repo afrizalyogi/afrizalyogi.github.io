@@ -14,12 +14,11 @@ import {
 } from "./layout/profile-img"
 import Carousel from "./layout/carousel"
 import AboutMe from "./layout/about-me"
+import MainWrapper from "./layout/main-wrapper"
 
 export default function Home() {
 	return (
-		<main
-			className="pt-24 px-6 sm:px-12 
-			lg:px-48 ">
+		<MainWrapper>
 			<section
 				id="hero"
 				className="flex flex-wrap-reverse justify-center items-center py-16
@@ -91,7 +90,7 @@ export default function Home() {
 				</div>
 			</section>
 			<section id="showcase" className="py-20">
-				<div className="section-title sm:mb-6 lg:mb-12">
+				<div className="section-title mb-6 lg:mb-12">
 					<p
 						className="text-5xl absolute left-0 right-0 text-center -mt-6 opacity-10
           	sm:text-7xl sm:-mt-12
@@ -139,6 +138,6 @@ export default function Home() {
 				</div>
 			</section>
 			<AboutMe></AboutMe>
-		</main>
+		</MainWrapper>
 	)
 }

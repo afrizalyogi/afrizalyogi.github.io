@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 export default function AboutMe() {
 	return (
 		<section id="about" className="py-20">
-			<div className="section-title sm:mb-6 lg:mb-12">
+			<div className="section-title mb-6 lg:mb-12">
 				<p
 					className="text-5xl absolute left-0 right-0 text-center -mt-6 opacity-10
           	sm:text-7xl sm:-mt-12

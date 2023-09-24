@@ -1,6 +1,4 @@
 import Link from "next/link"
-import { Swiper, SwiperSlide } from "swiper/react"
-import { A11y, Autoplay, Navigation } from "swiper/modules"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import {
@@ -13,13 +11,12 @@ import {
 	ProfileBase,
 	ProfileCircle,
 } from "../layout/profile-img"
+import MainWrapper from "../layout/main-wrapper"
 import AboutMe from "../layout/about-me"
 
-export default function Home() {
+export default function About() {
 	return (
-		<main
-			className="pt-24 px-6 sm:px-12 
-			lg:px-48 ">
+		<MainWrapper>
 			<section id="hero" className="py-16">
 				<div
 					className="flex flex-wrap-reverse justify-center items-center
@@ -138,7 +135,7 @@ export default function Home() {
 			</section>
 			<AboutMe></AboutMe>
 			<section id="journey" className="py-20">
-				<div className="section-title sm:mb-6 lg:mb-12">
+				<div className="section-title mb-12 lg:mb-16">
 					<p
 						className="text-5xl absolute left-0 right-0 text-center -mt-6 opacity-10
           	sm:text-7xl sm:-mt-12
@@ -161,18 +158,18 @@ export default function Home() {
 					</div>
 				</div>
 				<div className="section-content">
-					<div className="grid xl:grid-cols-2 gap-12">
+					<div className="grid 2xl:grid-cols-2 gap-12">
 						<div className="journey-content">
 							<div className="flex justify-between gap-6">
 								<p
 									className="font-bold text-md
-								sm:text-xl">
+								sm:text-2xl">
 									Digital Engineering Laboratory Assistant
 								</p>
 								<p
 									className="text-right font-bold text-md
-								sm:text-xl">
-									Lampung, Indonesia
+								sm:text-2xl">
+									Oct 2022 – Now
 								</p>
 							</div>
 							<div className="flex justify-between mb-6">
@@ -180,7 +177,7 @@ export default function Home() {
 									University of Lampung
 								</p>
 								<p className="text-sm lg:text-lg text-right text-black-secondary dark:text-white-secondary">
-									Oct 2022 – Now
+									Lampung, Indonesia
 								</p>
 							</div>
 							<ul className="flex flex-wrap gap-4 text-black-secondary dark:text-white-secondary">
@@ -214,13 +211,13 @@ export default function Home() {
 							<div className="flex justify-between gap-6">
 								<p
 									className="font-bold text-md
-								sm:text-xl">
+								sm:text-2xl">
 									Website Developer Intern
 								</p>
 								<p
 									className="text-right font-bold text-md
-								sm:text-xl">
-									Jakarta, Indonesia (Remote)
+								sm:text-2xl">
+									Mar 2023 – Jun 2023
 								</p>
 							</div>
 							<div className="flex justify-between mb-6">
@@ -232,7 +229,7 @@ export default function Home() {
 									)
 								</p>
 								<p className="text-sm lg:text-lg text-right text-black-secondary dark:text-white-secondary">
-									Mar 2023 – Jun 2023
+									Jakarta, Indonesia (Remote)
 								</p>
 							</div>
 							<ul className="flex flex-wrap gap-4 text-black-secondary dark:text-white-secondary">
@@ -272,13 +269,13 @@ export default function Home() {
 							<div className="flex justify-between gap-6">
 								<p
 									className="font-bold text-md
-								sm:text-xl">
+								sm:text-2xl">
 									Computer Technician Intern
 								</p>
 								<p
 									className="text-right font-bold text-md
-								sm:text-xl">
-									Lampung, Indonesia
+								sm:text-2xl">
+									Aug 2019 – Feb 2020
 								</p>
 							</div>
 							<div className="flex justify-between mb-6">
@@ -286,7 +283,7 @@ export default function Home() {
 									Sentra Computer
 								</p>
 								<p className="text-sm lg:text-lg text-right text-black-secondary dark:text-white-secondary">
-									Aug 2019 – Feb 2020
+									Lampung, Indonesia
 								</p>
 							</div>
 							<ul className="flex flex-wrap gap-4 text-black-secondary dark:text-white-secondary">
@@ -315,7 +312,7 @@ export default function Home() {
 				</div>
 			</section>
 			<section id="talent" className="py-20">
-				<div className="section-title mb-12">
+				<div className="section-title mb-12 lg:mb-16">
 					<p
 						className="text-5xl absolute left-0 right-0 text-center -mt-6 opacity-10
           	sm:text-7xl sm:-mt-12
@@ -427,6 +424,6 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
-		</main>
+		</MainWrapper>
 	)
 }

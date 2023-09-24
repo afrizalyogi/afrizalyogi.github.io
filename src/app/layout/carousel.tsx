@@ -2,6 +2,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLink } from "@fortawesome/free-solid-svg-icons"
 import Link from "next/link"
+import Image from "next/image"
 import showcase from "../data/showcase.json"
 import { Swiper, SwiperSlide } from "swiper/react"
 import { A11y, Autoplay, Navigation } from "swiper/modules"
@@ -31,12 +32,14 @@ export default function Carousel() {
 				navigation
 				loop={true}>
 				{showcaseData.map((item, index) => (
-					<SwiperSlide className="bg-white-primary carousel-content">
+					<SwiperSlide className="bg-white-primary dark:bg-black-bg carousel-content">
 						{({ isActive }) => (
 							<div className={isActive ? "" : "hidden"}>
-								<img
-									src={item.image}
-									alt={item.title}
+								<Image
+									src={"/" + item.image}
+									alt={"/" + item.title}
+									width={960}
+									height={540}
 									className="carousel-image rounded-3xl mb-12 shadow-xl w-full"
 								/>
 								<div

@@ -10,6 +10,12 @@ import {
 	faTelegram,
 } from "@fortawesome/free-brands-svg-icons"
 import { usePathname } from "next/navigation"
+import { motion } from "framer-motion"
+
+const variants = {
+	open: { opacity: 1, y: 0 },
+	closed: { opacity: 0, y: "-50%" },
+}
 
 export default function Navbar() {
 	const route = usePathname()
@@ -50,169 +56,171 @@ export default function Navbar() {
 					</div>
 				)}
 			</div>
-			{isShow && (
-				<div className="w-full h-screen">
-					<div className="collapsed py-12 lg:py-36">
-						<div
-							className="flex flex-wrap gap-16 justify-center items-center
+			<motion.div variants={variants} animate={isShow ? "open" : "closed"}>
+				{isShow && (
+					<div className="w-full h-screen">
+						<div className="collapsed py-12 lg:py-36">
+							<div
+								className="flex flex-wrap gap-16 justify-center items-center
             md:flex-nowrap
             2xl:justify-between">
-							<div
-								className="flex flex-wrap lg:flex-nowrap lg:gap-16 text-center
+								<div
+									className="flex flex-wrap lg:flex-nowrap lg:gap-16 text-center
               lg:text-left">
-								<div className="w-full lg:w-auto">
-									<ul
-										className="text-black-secondary dark:text-white-secondary 
+									<div className="w-full lg:w-auto">
+										<ul
+											className="text-black-secondary dark:text-white-secondary 
                     text-3xl
                     md:text-2xl
                     xl:text-3xl 
                     2xl:text-5xl">
-										<li className="py-4 lg:py-8">
-											<Link
-												href="/"
-												className={
-													route === "/"
-														? "font-bold  text-black-primary dark:text-white-primary"
-														: ""
-												}
-												onClick={() => setIsShow(false)}>
-												Home
-											</Link>
-										</li>
-										<li className="py-4 lg:py-8">
-											<Link
-												href="/projects"
-												className={
-													route === "/projects"
-														? "font-bold  text-black-primary dark:text-white-primary"
-														: ""
-												}
-												onClick={() => setIsShow(false)}>
-												Projects
-											</Link>
-										</li>
-										<li className="py-4 lg:py-8">
-											<Link
-												href="/services"
-												className={
-													route === "/services"
-														? "font-bold  text-black-primary dark:text-white-primary"
-														: ""
-												}
-												onClick={() => setIsShow(false)}>
-												Services
-											</Link>
-										</li>
-									</ul>
-								</div>
-								<div className="w-full lg:w-auto">
-									<ul
-										className="text-black-secondary dark:text-white-secondary
+											<li className="py-4 lg:py-8">
+												<Link
+													href="/"
+													className={
+														route === "/"
+															? "font-bold  text-black-primary dark:text-white-primary"
+															: ""
+													}
+													onClick={() => setIsShow(false)}>
+													Home
+												</Link>
+											</li>
+											<li className="py-4 lg:py-8">
+												<Link
+													href="/projects"
+													className={
+														route === "/projects"
+															? "font-bold  text-black-primary dark:text-white-primary"
+															: ""
+													}
+													onClick={() => setIsShow(false)}>
+													Projects
+												</Link>
+											</li>
+											<li className="py-4 lg:py-8">
+												<Link
+													href="/services"
+													className={
+														route === "/services"
+															? "font-bold  text-black-primary dark:text-white-primary"
+															: ""
+													}
+													onClick={() => setIsShow(false)}>
+													Services
+												</Link>
+											</li>
+										</ul>
+									</div>
+									<div className="w-full lg:w-auto">
+										<ul
+											className="text-black-secondary dark:text-white-secondary
                     text-3xl
                     md:text-2xl
                     xl:text-3xl 
                     2xl:text-5xl">
-										<li className="py-4 lg:py-8">
-											<Link
-												href="/certificates"
-												className={
-													route === "/certificates"
-														? "font-bold  text-black-primary dark:text-white-primary"
-														: ""
-												}
-												onClick={() => setIsShow(false)}>
-												Certificates
-											</Link>
-										</li>
-										<li className="py-4 lg:py-8">
-											<Link
-												href="/about"
-												className={
-													route === "/about"
-														? "font-bold  text-black-primary dark:text-white-primary"
-														: ""
-												}
-												onClick={() => setIsShow(false)}>
-												About me
-											</Link>
-										</li>
-										<li className="py-4 lg:py-8">
-											<Link
-												href="/blog"
-												className={
-													route === "/blog"
-														? "font-bold  text-black-primary dark:text-white-primary"
-														: ""
-												}
-												onClick={() => setIsShow(false)}>
-												Blog
-											</Link>
-										</li>
-									</ul>
+											<li className="py-4 lg:py-8">
+												<Link
+													href="/certificates"
+													className={
+														route === "/certificates"
+															? "font-bold  text-black-primary dark:text-white-primary"
+															: ""
+													}
+													onClick={() => setIsShow(false)}>
+													Certificates
+												</Link>
+											</li>
+											<li className="py-4 lg:py-8">
+												<Link
+													href="/about"
+													className={
+														route === "/about"
+															? "font-bold  text-black-primary dark:text-white-primary"
+															: ""
+													}
+													onClick={() => setIsShow(false)}>
+													About me
+												</Link>
+											</li>
+											<li className="py-4 lg:py-8">
+												<Link
+													href="/blog"
+													className={
+														route === "/blog"
+															? "font-bold  text-black-primary dark:text-white-primary"
+															: ""
+													}
+													onClick={() => setIsShow(false)}>
+													Blog
+												</Link>
+											</li>
+										</ul>
+									</div>
 								</div>
-							</div>
-							<div className="hidden lg:block">
-								<h2
-									className="font-bold mb-2
+								<div className="hidden lg:block">
+									<h2
+										className="font-bold mb-2
                 md:text-xl
                 xl:text-3xl  
                 2xl:text-5xl">
-									Let's work together!
-								</h2>
-								<p
-									className="text-black-secondary dark:text-white-secondary mb-8
+										Let's work together!
+									</h2>
+									<p
+										className="text-black-secondary dark:text-white-secondary mb-8
                   text-md
                   xl:text-xl
                 ">
-									I aspire to consistently enhance my knowledge <br />
-									and advance my career. I'm open to collaboration.
-								</p>
-								<div className="flex">
-									<div className="flex text-black-secondary dark:text-white-secondary">
-										<Link
-											href="mailto:afrizalyogi.id@gmail.com"
-											className="flex items-center mr-4
+										I aspire to consistently enhance my knowledge <br />
+										and advance my career. I'm open to collaboration.
+									</p>
+									<div className="flex">
+										<div className="flex text-black-secondary dark:text-white-secondary">
+											<Link
+												href="mailto:afrizalyogi.id@gmail.com"
+												className="flex items-center mr-4
                       text-md
                       xl:text-xl">
-											<FontAwesomeIcon
-												icon={faEnvelope}
-												className="mr-2
+												<FontAwesomeIcon
+													icon={faEnvelope}
+													className="mr-2
                         text-2xl
                         xl:text-3xl"
-											/>
-											afrizalyogi.id@gmail.com
-										</Link>
-										<Link
-											href="#"
-											className="hover:text-blue-primary mx-4
+												/>
+												afrizalyogi.id@gmail.com
+											</Link>
+											<Link
+												href="#"
+												className="hover:text-blue-primary mx-4
                       text-2xl
                       xl:text-4xl">
-											<FontAwesomeIcon icon={faLinkedin} />
-										</Link>
-										<Link
-											href="#"
-											className="hover:text-blue-primary mx-4
+												<FontAwesomeIcon icon={faLinkedin} />
+											</Link>
+											<Link
+												href="#"
+												className="hover:text-blue-primary mx-4
                       text-2xl
                       xl:text-4xl">
-											<FontAwesomeIcon icon={faGithub} />
-										</Link>
-										<Link
-											href="#"
-											className="hover:text-blue-primary mx-4
+												<FontAwesomeIcon icon={faGithub} />
+											</Link>
+											<Link
+												href="#"
+												className="hover:text-blue-primary mx-4
                       text-2xl
                       xl:text-4xl">
-											<FontAwesomeIcon icon={faTelegram} />
-										</Link>
+												<FontAwesomeIcon icon={faTelegram} />
+											</Link>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
+						<div className="flex justify-center">
+							<ChangeTheme></ChangeTheme>
+						</div>
 					</div>
-					<div className="flex justify-center">
-						<ChangeTheme></ChangeTheme>
-					</div>
-				</div>
-			)}
+				)}
+			</motion.div>
 		</nav>
 	)
 }

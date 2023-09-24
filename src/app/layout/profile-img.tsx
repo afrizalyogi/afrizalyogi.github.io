@@ -1,5 +1,6 @@
 "use client"
 import { useState, useEffect } from "react"
+import Image from "next/image"
 
 function Offset(e: MouseEvent, x: number, y: number) {
 	const { clientX, clientY } = e
@@ -26,12 +27,14 @@ export function ProfileTriangle() {
 		}
 	}, [scaleX, scaleY])
 	return (
-		<img
+		<Image
 			id="profile-triangle"
 			className="absolute blur-sm drop-shadow-xl w-20
 			xl:w-auto"
-			src="assets/profile/triangle.png"
+			src="/assets/profile/triangle.png"
 			alt=""
+			width={460}
+			height={618}
 			style={{
 				transform: `translate(0, -172px) translate(${offset.x}px, ${offset.y}px)`,
 			}}
@@ -57,12 +60,14 @@ export function ProfileBase() {
 		}
 	}, [scaleX, scaleY])
 	return (
-		<img
+		<Image
 			id="profile-base"
 			className="drop-shadow-xl w-64
 			xl:w-auto"
-			src="assets/profile/profile-with-bg.png"
+			src="/assets/profile/profile-with-bg.png"
 			alt=""
+			width={640}
+			height={360}
 			style={{
 				transform: `translate(0, -36px) translate(${offset.x}px, ${offset.y}px)`,
 			}}
@@ -88,12 +93,14 @@ export function ProfileCircle() {
 		}
 	}, [scaleX, scaleY])
 	return (
-		<img
+		<Image
 			id="profile-circle"
 			className="absolute drop-shadow-xl w-28 -ml-12
 			xl:w-auto xl:ml-0"
-			src="assets/profile/circle.png"
+			src="/assets/profile/circle.png"
 			alt=""
+			width={100}
+			height={100}
 			style={{
 				transform: `translate(192px, 12px) translate(${offset.x}px, ${offset.y}px)`,
 			}}
