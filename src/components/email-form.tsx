@@ -26,6 +26,14 @@ export default function EmailForm() {
 		e.preventDefault()
 		try {
 			await axios.post("https://email.api.afrizalyogi.studio", formData)
+			setFormData({
+				from: "",
+				to: "afrizalyogi.id@gmail.com",
+				name: "",
+				subject: "",
+				text: "",
+				phone: "",
+			})
 		} catch (error) {
 			console.error("Error sending email:", error)
 		}
