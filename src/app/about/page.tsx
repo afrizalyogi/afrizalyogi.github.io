@@ -90,7 +90,7 @@ export default function About() {
 				</div>
 			</section>
 			<section id="what-i-did" className="py-20">
-				<div className="section-title mb-6">
+				<div className="section-title mb-12 lg:mb-16">
 					<p
 						className="text-5xl absolute left-0 right-0 text-center -mt-6 opacity-10
           	sm:text-7xl sm:-mt-12
@@ -116,8 +116,9 @@ export default function About() {
 					<div className="grid xl:grid-cols-3 gap-6">
 						<div
 							id="service-1"
-							className="service-content drop-shadow-lg rounded-xl border-2 mt-16 lg:mt-12">
+							className="service-content h-64 xl:h-96 2xl:h-72 drop-shadow-lg rounded-xl border-2">
 							<Link href={"/service"}>
+								{" "}
 								<div className="service-img"></div>
 								<div className="service-text p-12">
 									<h2 className="font-bold text-white-primary mb-2 text-2xl sm:text-4xl">
@@ -132,8 +133,9 @@ export default function About() {
 						</div>
 						<div
 							id="service-2"
-							className="service-content drop-shadow-lg rounded-xl border-2 mt-16 lg:mt-12">
+							className="service-content h-64 xl:h-96 2xl:h-72 drop-shadow-lg rounded-xl border-2">
 							<Link href={"/service"}>
+								{" "}
 								<div className="service-img"></div>
 								<div className="service-text p-12">
 									<h2 className="font-bold text-white-primary mb-2 text-2xl sm:text-4xl">
@@ -148,8 +150,9 @@ export default function About() {
 						</div>
 						<div
 							id="service-3"
-							className="service-content drop-shadow-lg rounded-xl border-2 mt-16 lg:mt-12">
+							className="service-content h-64 xl:h-96 2xl:h-72 drop-shadow-lg rounded-xl border-2">
 							<Link href={"/service"}>
+								{" "}
 								<div className="service-img"></div>
 								<div className="service-text p-12">
 									<h2 className="font-bold text-white-primary mb-2 text-2xl sm:text-4xl">
