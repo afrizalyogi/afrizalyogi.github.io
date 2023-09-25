@@ -2,9 +2,9 @@
 import { ThemeProvider } from "next-themes"
 import React, { ReactNode } from "react"
 
-import Navbar from "../components/navbar"
-import Footer from "../components/footer"
-import BackToTop from "../components/back-to-top"
+import Navbar from "@/components/navbar"
+import Footer from "@/components/footer"
+import BackToTop from "@/components/back-to-top"
 
 interface WrapperProps {
 	children: ReactNode

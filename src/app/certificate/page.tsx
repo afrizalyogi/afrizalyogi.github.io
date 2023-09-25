@@ -1,4 +1,4 @@
-import MainWrapper from "../../components/main-wrapper"
+import MainWrapper from "@/components/main-wrapper"
 import Image from "next/image"
 
 export default function Certificate() {
