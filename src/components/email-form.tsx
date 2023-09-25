@@ -7,7 +7,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 export default function EmailForm() {
 	const [formData, setFormData] = useState({
 		from: "",
-		to: "afrizalyogi.id@gmail.com",
 		name: "",
 		subject: "",
 		text: "",
@@ -28,7 +27,6 @@ export default function EmailForm() {
 			await axios.post("https://email.api.afrizalyogi.studio", formData)
 			setFormData({
 				from: "",
-				to: "afrizalyogi.id@gmail.com",
 				name: "",
 				subject: "",
 				text: "",
