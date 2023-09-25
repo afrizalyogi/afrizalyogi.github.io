@@ -2,8 +2,8 @@ import { faLink } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Link from "next/link"
 import Image from "next/image"
-import MainWrapper from "../layout/main-wrapper"
-import showcase from "../data/showcase.json"
+import MainWrapper from "../../components/main-wrapper"
+import showcase from "../../data/showcase.json"
 
 interface Projects {
 	title: string
