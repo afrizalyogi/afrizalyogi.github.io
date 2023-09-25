@@ -5,7 +5,7 @@ import Image from "next/image"
 import MainWrapper from "../layout/main-wrapper"
 import showcase from "../data/showcase.json"
 
-interface Project {
+interface Projects {
 	title: string
 	description: string
 	image: string
@@ -14,11 +14,11 @@ interface Project {
 	linkUrl: string[]
 }
 
-export default function Projects() {
-	const projectData: Project[] = showcase
+export default function Project() {
+	const projectData: Projects[] = showcase
 	return (
 		<MainWrapper>
-			<section id="Projects" className="py-20">
+			<section id="project" className="py-20">
 				<div className="section-title mb-6 lg:mb-12">
 					<p
 						className="text-5xl absolute left-0 right-0 text-center -mt-6 opacity-10
@@ -26,7 +26,7 @@ export default function Projects() {
 						lg:right-auto lg:left-24 lg:text-8xl 
 						xl:-mt-16
           ">
-						<b>Projects</b>
+						<b>Project</b>
 					</p>
 					<div
 						className="flex flex-wrap gap-6 justify-center items-center
@@ -35,7 +35,7 @@ export default function Projects() {
 							<h1
 								className="text-3xl w-full lg:w-auto mx-auto font-bold drop-shadow-lg
 							sm:text-5xl">
-								Projects
+								Project
 							</h1>
 							<div className="line hidden lg:block mx-auto drop-shadow-lg bg-black-primary dark:bg-white-primary"></div>
 						</div>

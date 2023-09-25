@@ -88,26 +88,26 @@ export default function Navbar() {
 											</li>
 											<li className="py-4 lg:py-8">
 												<Link
-													href="/projects"
+													href="/project"
 													className={
-														route === "/projects"
+														route === "/project"
 															? "font-bold  text-black-primary dark:text-white-primary"
 															: ""
 													}
 													onClick={() => setIsShow(false)}>
-													Projects
+													Project
 												</Link>
 											</li>
 											<li className="py-4 lg:py-8">
 												<Link
-													href="/services"
+													href="/service"
 													className={
-														route === "/services"
+														route === "/service"
 															? "font-bold  text-black-primary dark:text-white-primary"
 															: ""
 													}
 													onClick={() => setIsShow(false)}>
-													Services
+													Service
 												</Link>
 											</li>
 										</ul>
@@ -121,14 +121,14 @@ export default function Navbar() {
                     2xl:text-5xl">
 											<li className="py-4 lg:py-8">
 												<Link
-													href="/certificates"
+													href="/certificate"
 													className={
-														route === "/certificates"
+														route === "/certificate"
 															? "font-bold  text-black-primary dark:text-white-primary"
 															: ""
 													}
 													onClick={() => setIsShow(false)}>
-													Certificates
+													Certificate
 												</Link>
 											</li>
 											<li className="py-4 lg:py-8">
