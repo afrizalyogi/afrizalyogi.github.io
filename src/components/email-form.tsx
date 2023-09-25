@@ -1,5 +1,5 @@
 "use client"
-import { useState } from "react"
+import { FormEvent, useState } from "react"
 import axios from "axios"
 
 export default function EmailForm() {
@@ -18,10 +18,10 @@ export default function EmailForm() {
 		})
 	}
 
-	const handleSubmit = async (e: { preventDefault: () => void }) => {
+	const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
 		e.preventDefault()
 		try {
-			await axios.post("https://api-private.vercel.app/", formData) // Sending the data to your Express.js API
+			await axios.post("https://email.api.afrizalyogi.studio/", formData)
 			alert("Email sent successfully!")
 		} catch (error) {
 			console.error("Error sending email:", error)

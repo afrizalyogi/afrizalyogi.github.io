@@ -11,10 +11,10 @@ import {
 	ProfileTriangle,
 	ProfileBase,
 	ProfileCircle,
-} from "./layout/profile-img"
-import Carousel from "./layout/carousel"
-import AboutMe from "./layout/about-me"
-import MainWrapper from "./layout/main-wrapper"
+} from "../components/profile-img"
+import Carousel from "../components/carousel"
+import AboutMe from "../components/about-me"
+import MainWrapper from "../components/main-wrapper"
 
 export default function Home() {
 	return (
