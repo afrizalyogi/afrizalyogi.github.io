@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Link from "next/link"
 import Image from "next/image"
 import MainWrapper from "../../components/main-wrapper"
-import showcase from "../data/showcase.json"
+import showcase from "../../data/showcase.json"
 
 interface Projects {
 	title: string
