@@ -80,7 +80,8 @@ export default function Service() {
 					<div className="section-title">
 						<h1
 							className="text-3xl w-full mb-2 lg:mb-6 lg:w-auto mx-auto font-bold
-							lg:text-7xl">
+							lg:text-6xl
+							2xl:w-3/4 2xl:mx-0">
 							Let's Talk About Your Project!
 						</h1>
 						<p className="text-sm lg:text-xl text-black-secondary dark:text-white-secondary xl:w-3/4">
