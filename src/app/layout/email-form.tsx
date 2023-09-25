@@ -6,7 +6,7 @@ export default function EmailForm() {
 	const [formData, setFormData] = useState({
 		from: "",
 		to: "afrizalyogi.id@gmail.com",
-		subject: "[afrizalyogi.studio] ",
+		subject: "",
 		text: "",
 	})
 
@@ -21,7 +21,7 @@ export default function EmailForm() {
 	const handleSubmit = async (e: { preventDefault: () => void }) => {
 		e.preventDefault()
 		try {
-			await axios.post("http://localhost:5000/api/email", formData) // Sending the data to your Express.js API
+			await axios.post("https://api-private.vercel.app/", formData) // Sending the data to your Express.js API
 			alert("Email sent successfully!")
 		} catch (error) {
 			console.error("Error sending email:", error)
