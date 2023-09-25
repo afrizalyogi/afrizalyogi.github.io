@@ -1,6 +1,6 @@
 import Link from "next/link"
-import MainWrapper from "../../components/main-wrapper"
-import EmailForm from "../../components/email-form"
+import MainWrapper from "@/components/main-wrapper"
+import EmailForm from "@/components/email-form"
 
 export default function Service() {
 	return (

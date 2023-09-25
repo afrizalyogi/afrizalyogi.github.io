@@ -60,6 +60,22 @@ html.dark .section-title p b {
 	transition: 300ms;
 }
 
+.swiper-pagination-bullet {
+	background: var(--black-secondary);
+}
+
+html.dark .swiper-pagination-bullet {
+	background: var(--white-secondary);
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+	background: var(--black-primary);
+}
+
+html.dark .swiper-pagination-bullet.swiper-pagination-bullet-active {
+	background: var(--white-primary);
+}
+
 .service-content {
 	position: relative;
 	width: auto;
