@@ -51,7 +51,7 @@ export default function Footer() {
 				<FontAwesomeIcon icon={faHeart} className="mx-2" />
 				by{" "}
 				<Link
-					href="https://afrizalyogi.github.io"
+					href="https://afrizalyogi.studio"
 					target="_blank"
 					rel="noopener noreferrer">
 					<b>Afrizal Yogi Pratama</b>

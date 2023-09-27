@@ -1,7 +1,8 @@
 "use client"
 import { ThemeProvider } from "next-themes"
 import React, { ReactNode } from "react"
-
+import { Suspense } from "react"
+import FooterLoading from "./footer-loading"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import BackToTop from "@/components/back-to-top"
@@ -18,7 +19,9 @@ export default function Wrapper({ children }: WrapperProps) {
 				{children}
 			</div>
 			<BackToTop></BackToTop>
-			<Footer></Footer>
+			<Suspense fallback={<FooterLoading />}>
+				<Footer></Footer>
+			</Suspense>
 		</ThemeProvider>
 	)
 }

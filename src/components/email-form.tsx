@@ -1,5 +1,5 @@
 "use client"
-import { FormEvent, useState } from "react"
+import { FormEvent, useState, useEffect } from "react"
 import axios from "axios"
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -12,6 +12,16 @@ export default function EmailForm() {
 		text: "",
 		phone: "",
 	})
+
+	const [isSubmit, setIsSubmit] = useState(false)
+
+	useEffect(() => {
+		if (isSubmit) {
+			setTimeout(() => {
+				setIsSubmit(false)
+			}, 3000)
+		}
+	}, [isSubmit])
 
 	const handleChange = (e: { target: { name: any; value: any } }) => {
 		const { name, value } = e.target
@@ -32,6 +42,7 @@ export default function EmailForm() {
 				text: "",
 				phone: "",
 			})
+			setIsSubmit(true)
 		} catch (error) {
 			console.error("Error sending email:", error)
 		}
@@ -127,9 +138,11 @@ export default function EmailForm() {
 			</div>
 			<button
 				type="submit"
-				className="text-sm lg:text-lg bg-blue-primary text-white-primary py-4 lg:py-2 px-6 rounded-xl">
-				<FontAwesomeIcon icon={faPaperPlane} className="mx-2" />
-				Send Message
+				className={`${
+					isSubmit ? "bg-green" : "bg-blue-primary"
+				} flex items-center gap-4 text-white-primary py-4 lg:py-2 px-6 rounded-xl`}>
+				<FontAwesomeIcon icon={faPaperPlane} />
+				{isSubmit ? "Sent Successfully" : "Send Message"}
 			</button>
 		</form>
 	)

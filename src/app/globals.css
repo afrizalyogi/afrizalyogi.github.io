@@ -11,6 +11,7 @@
 		--black-bg: #1f1f22;
 		--white-primary: #fbf8f6;
 		--white-secondary: #dcdcdc;
+		--green: #1cb07c;
 	}
 }
 
@@ -58,6 +59,11 @@ html.dark .section-title p b {
 #profile-triangle,
 #profile-circle {
 	transition: 300ms;
+}
+
+.swiper-pagination {
+	display: flex;
+	justify-content: left;
 }
 
 .swiper-pagination-bullet {
@@ -168,6 +174,22 @@ html.dark .swiper-pagination-bullet.swiper-pagination-bullet-active {
 	font-size: 16px !important;
 	display: flex;
 	z-index: 3;
+}
+
+.skeleton {
+	animation: skeletonLoading 1s infinite;
+}
+
+@keyframes skeletonLoading {
+	0% {
+		background-color: hsl(200, 20%, 95%);
+	}
+	50% {
+		background-color: hsl(200, 20%, 90%);
+	}
+	100% {
+		background-color: hsl(200, 20%, 95%);
+	}
 }
 
 @media (min-width: 640px) {

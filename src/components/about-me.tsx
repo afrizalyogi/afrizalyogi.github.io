@@ -1,38 +1,40 @@
+"use client"
 import {
 	faMugHot,
 	faPalette,
 	faPuzzlePiece,
 } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import Typewriter from "typewriter-effect"
 
 export default function AboutMe() {
 	return (
 		<section id="about" className="py-20">
-			<div className="section-title mb-6 lg:mb-12">
-				<p
-					className="text-5xl absolute left-0 right-0 text-center -mt-6 opacity-10
-          	sm:text-7xl sm:-mt-12
-						lg:right-auto lg:left-24 lg:text-8xl 
-						xl:-mt-16
-          ">
-					<b>About me</b>
-				</p>
-				<div
-					className="flex flex-wrap gap-6 justify-center items-center
-					lg:flex-nowrap lg:justify-between">
-					<div className="flex justify-center items-center gap-6">
-						<h1
-							className="text-3xl w-full lg:w-auto mx-auto font-bold drop-shadow-lg
-							sm:text-5xl">
-							About me
-						</h1>
-						<div className="line hidden lg:block mx-auto drop-shadow-lg bg-black-primary dark:bg-white-primary"></div>
-					</div>
-				</div>
-			</div>
 			<div className="section-content">
+				<div className="mb-12">
+					<h2 className="flex flex-wrap font-bold mb-6 text-3xl sm:text-5xl">
+						Hello! I'm Yogi,&nbsp;
+						<Typewriter
+							options={{
+								strings: ["a Front-end Website Developer", "an UI/UX Designer"],
+								autoStart: true,
+								loop: true,
+							}}
+						/>
+					</h2>
+					<p className="text-sm lg:text-lg text-black-secondary dark:text-white-secondary">
+						An Informatics student with a fervent passion for technology and a
+						certified Junior Web Developer. Proficient in HTML, CSS, SASS,
+						JavaScript, Bootstrap, and TailwindCSS. I have honed my skills
+						through practical experience as a Computer Technician and Website
+						Developer. With a strong curiosity and the ability to quickly pick
+						up new skills, I am a fast learner who can seamlessly adapt to new
+						environments.
+					</p>
+				</div>
+				{/* </div> */}
 				<div className="grid xl:grid-cols-3 gap-6">
-					<div className="drop-shadow-lg rounded-xl border-2 p-6 pt-14 mt-16 lg:mt-12">
+					<div className="rounded-xl border-2 p-6 pt-14 mt-16 lg:mt-12">
 						<div className="absolute p-4 border-2 rounded-xl -mt-24 mx-auto bg-white-primary dark:bg-black-bg">
 							<FontAwesomeIcon
 								icon={faPuzzlePiece}
@@ -45,7 +47,7 @@ export default function AboutMe() {
 							things quickly.
 						</p>
 					</div>
-					<div className="drop-shadow-lg rounded-xl border-2 p-6 pt-14 mt-16 lg:mt-12">
+					<div className="rounded-xl border-2 p-6 pt-14 mt-16 lg:mt-12">
 						<div className="absolute p-4 border-2 rounded-xl -mt-24 mx-auto bg-white-primary dark:bg-black-bg">
 							<FontAwesomeIcon
 								icon={faMugHot}
@@ -58,7 +60,7 @@ export default function AboutMe() {
 							that I can do it with faster way but still with a great results.
 						</p>
 					</div>
-					<div className="drop-shadow-lg rounded-xl border-2 p-6 pt-14 mt-16 lg:mt-12">
+					<div className="rounded-xl border-2 p-6 pt-14 mt-16 lg:mt-12">
 						<div className="absolute p-4 border-2 rounded-xl -mt-24 mx-auto bg-white-primary dark:bg-black-bg">
 							<FontAwesomeIcon
 								icon={faPalette}
