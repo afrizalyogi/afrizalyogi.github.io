@@ -53,7 +53,7 @@ export default function Testimonial() {
 						<SwiperSlide className="bg-white-primary dark:bg-black-bg pb-16">
 							{({ isActive }) => (
 								<div className={isActive ? "" : "hidden"}>
-									<h2 className="mb-12 text-lg sm:text-2xl">
+									<h2 className="mb-12 text-sm sm:text-2xl">
 										<FontAwesomeIcon
 											icon={faQuoteLeft}
 											className="text-4xl lg:text-5xl mb-4"
@@ -61,8 +61,8 @@ export default function Testimonial() {
 										<br />
 										{item.text}
 									</h2>
-									<p className="font-bold text-2xl lg:text-4xl">{item.name}</p>
-									<p className="text-xl lg:text-2xl text-black-secondary dark:text-white-secondary">
+									<p className="font-bold text-xl lg:text-4xl">{item.name}</p>
+									<p className="text-sm lg:text-2xl text-black-secondary dark:text-white-secondary">
 										{item.title}
 									</p>
 								</div>
