@@ -1,3 +1,4 @@
+import Contact from "@/components/contact"
 import MainWrapper from "@/components/main-wrapper"
 import Image from "next/image"
 
@@ -154,6 +155,7 @@ export default function Certificate() {
 					</div>
 				</div>
 			</section>
+			<Contact></Contact>
 		</MainWrapper>
 	)
 }

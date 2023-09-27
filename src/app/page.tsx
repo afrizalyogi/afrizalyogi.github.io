@@ -1,5 +1,4 @@
 import Link from "next/link"
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import {
@@ -12,9 +11,10 @@ import {
 	ProfileBase,
 	ProfileCircle,
 } from "@/components/profile-img"
-import Carousel from "@/components/carousel"
-import AboutMe from "@/components/about-me"
 import MainWrapper from "@/components/main-wrapper"
+import Showcase from "@/components/showcase"
+import Contact from "@/components/contact"
+import Services from "@/components/service"
 
 export default function Home() {
 	return (
@@ -89,55 +89,9 @@ export default function Home() {
 					<ProfileTriangle></ProfileTriangle>
 				</div>
 			</section>
-			<section id="showcase" className="py-20">
-				<div className="section-title mb-6 lg:mb-12">
-					<p
-						className="text-5xl absolute left-0 right-0 text-center -mt-6 opacity-10
-          	sm:text-7xl sm:-mt-12
-						lg:right-auto lg:left-24 lg:text-8xl 
-						xl:-mt-16
-          ">
-						<b>Showcase</b>
-					</p>
-					<div
-						className="flex flex-wrap gap-6 justify-center items-center
-					lg:flex-nowrap lg:justify-between">
-						<div className="flex justify-center items-center gap-6">
-							<h1
-								className="text-3xl w-full lg:w-auto mx-auto font-bold drop-shadow-lg
-							sm:text-5xl">
-								Showcase
-							</h1>
-							<div className="line hidden lg:block mx-auto drop-shadow-lg bg-black-primary dark:bg-white-primary"></div>
-						</div>
-						<div
-							className="flex w-full justify-center
-							lg:w-auto">
-							<Link
-								href="#"
-								className="
-                px-6 py-2 border-2 rounded-2xl border-black-secondary text-white-primary bg-black-secondary items-center hover:bg-black-primary hover:text-white-primary hover:border-black-primary
-                dark:border-white-secondary dark:text-black-primary dark:bg-white-secondary dark:hover:bg-white-primary dark:hover:text-black-primary dark:hover:border-white-primary
-								hidden lg:flex">
-								View More
-							</Link>
-						</div>
-					</div>
-				</div>
-				<div className="section-content">
-					<Carousel></Carousel>
-					<Link
-						href="#"
-						className="
-                px-6 py-2 mt-6 text-xs w-fit mx-auto border-2 rounded-2xl border-black-secondary text-white-primary bg-black-secondary items-center hover:bg-black-primary hover:text-white-primary hover:border-black-primary
-                dark:border-white-secondary dark:text-black-primary dark:bg-white-secondary dark:hover:bg-white-primary dark:hover:text-black-primary dark:hover:border-white-primary
-								flex lg:hidden
-								sm:text-md">
-						View More
-					</Link>
-				</div>
-			</section>
-			<AboutMe></AboutMe>
+			<Services></Services>
+			<Showcase></Showcase>
+			<Contact></Contact>
 		</MainWrapper>
 	)
 }

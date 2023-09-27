@@ -11,6 +11,7 @@
 		--black-bg: #1f1f22;
 		--white-primary: #fbf8f6;
 		--white-secondary: #dcdcdc;
+		--green: #1cb07c;
 	}
 }
 
@@ -58,6 +59,11 @@ html.dark .section-title p b {
 #profile-triangle,
 #profile-circle {
 	transition: 300ms;
+}
+
+.swiper-pagination {
+	display: flex;
+	justify-content: left;
 }
 
 .swiper-pagination-bullet {
