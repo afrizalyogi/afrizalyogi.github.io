@@ -46,7 +46,7 @@ export default function Showcase() {
 						className="flex w-full justify-center
 							lg:w-auto">
 						<Link
-							href="#"
+							href={"/service"}
 							className="
                 px-6 py-2 border-2 rounded-2xl border-black-secondary text-white-primary bg-black-secondary items-center hover:bg-black-primary hover:text-white-primary hover:border-black-primary
                 dark:border-white-secondary dark:text-black-primary dark:bg-white-secondary dark:hover:bg-white-primary dark:hover:text-black-primary dark:hover:border-white-primary
@@ -124,7 +124,7 @@ export default function Showcase() {
 					</Swiper>
 				</div>
 				<Link
-					href="#"
+					href={"/service"}
 					className="
                 px-6 py-2 mt-6 text-xs w-fit mx-auto border-2 rounded-2xl border-black-secondary text-white-primary bg-black-secondary items-center hover:bg-black-primary hover:text-white-primary hover:border-black-primary
                 dark:border-white-secondary dark:text-black-primary dark:bg-white-secondary dark:hover:bg-white-primary dark:hover:text-black-primary dark:hover:border-white-primary

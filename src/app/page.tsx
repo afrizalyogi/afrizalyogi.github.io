@@ -15,6 +15,7 @@ import MainWrapper from "@/components/main-wrapper"
 import Showcase from "@/components/showcase"
 import Contact from "@/components/contact"
 import Services from "@/components/service"
+import Testimonial from "@/components/testimonial"
 
 export default function Home() {
 	return (
@@ -43,7 +44,7 @@ export default function Home() {
 						lg:gap-12 lg:flex-nowrap
 						xl:justify-start">
 						<Link
-							href="#"
+							href={"mailto:afrizalyogi.id@gmail.com"}
 							className="
                 text-xs px-12 py-3 border-2 rounded-2xl text-blue-primary items-center flex hover:bg-blue-primary hover:text-white-primary hover:border-blue-primary
                 sm:text-sm
@@ -57,7 +58,7 @@ export default function Home() {
 							className="flex w-full justify-center
 							lg:w-auto">
 							<div className="mr-12">
-								<Link href={"#"}>
+								<Link href={"https://www.linkedin.com/in/afrizalyogi/"}>
 									<FontAwesomeIcon
 										icon={faLinkedin}
 										className="text-3xl 2xl:text-4xl"
@@ -65,7 +66,7 @@ export default function Home() {
 								</Link>
 							</div>
 							<div className="mr-12">
-								<Link href={"#"}>
+								<Link href={"https://github.com/afrizalyogi"}>
 									<FontAwesomeIcon
 										icon={faGithub}
 										className="text-3xl 2xl:text-4xl"
@@ -73,7 +74,7 @@ export default function Home() {
 								</Link>
 							</div>
 							<div>
-								<Link href={"#"}>
+								<Link href={"https://t.me/afrizalyogi"}>
 									<FontAwesomeIcon
 										icon={faTelegram}
 										className="text-3xl 2xl:text-4xl"
@@ -91,6 +92,7 @@ export default function Home() {
 			</section>
 			<Services></Services>
 			<Showcase></Showcase>
+			<Testimonial></Testimonial>
 			<Contact></Contact>
 		</MainWrapper>
 	)
