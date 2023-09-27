@@ -17,7 +17,7 @@ export default function MainWrapper({ children }: WrapperProps) {
 				className="bg-white-primary text-black-primary dark:bg-black-bg dark:text-white-primary">
 				<main
 					className="pt-24 px-6 sm:px-12 
-			lg:px-48 ">
+					lg:px-48">
 					{children}
 				</main>
 			</motion.div>

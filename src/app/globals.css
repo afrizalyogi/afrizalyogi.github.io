@@ -176,6 +176,22 @@ html.dark .swiper-pagination-bullet.swiper-pagination-bullet-active {
 	z-index: 3;
 }
 
+.skeleton {
+	animation: skeletonLoading 1s infinite;
+}
+
+@keyframes skeletonLoading {
+	0% {
+		background-color: hsl(200, 20%, 95%);
+	}
+	50% {
+		background-color: hsl(200, 20%, 90%);
+	}
+	100% {
+		background-color: hsl(200, 20%, 95%);
+	}
+}
+
 @media (min-width: 640px) {
 	.swiper-button-prev:after {
 		padding-left: 18px;

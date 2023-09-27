@@ -63,7 +63,7 @@ export function ProfileBase() {
 		<Image
 			id="profile-base"
 			className="drop-shadow-xl w-64
-			xl:w-auto"
+			xl:w-full"
 			src="/assets/profile/profile-with-bg.png"
 			alt=""
 			width={640}
