@@ -1,6 +1,6 @@
 "use client"
 import Link from "next/link"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import ChangeTheme from "./theme"
 import { faEnvelope, faTimes } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -21,10 +21,14 @@ export default function Navbar() {
 	const route = usePathname()
 	const [isShow, setIsShow] = useState(false)
 
+	useEffect(() => {
+		setIsShow(false)
+	}, [])
+
 	return (
 		<nav
 			id="top"
-			className="block fixed mx-auto px-6 py-6 w-full z-50 items-center justify-between bg-white-primary dark:bg-black-bg
+			className="block fixed mx-auto px-6 py-6 w-screen z-50 items-center justify-between bg-white-primary dark:bg-black-bg
 			sm:px-12
 			lg:px-48">
 			<div className="flex gap-4 items-center justify-between text-black-secondary dark:text-white-secondary ">
@@ -58,7 +62,7 @@ export default function Navbar() {
 			</div>
 			<motion.div variants={variants} animate={isShow ? "open" : "closed"}>
 				{isShow && (
-					<div className="w-full h-screen">
+					<div className="h-screen">
 						<div className="collapsed py-12 lg:py-36">
 							<div
 								className="flex flex-wrap gap-16 justify-center items-center
@@ -66,7 +70,7 @@ export default function Navbar() {
             2xl:justify-between">
 								<div
 									className="flex flex-wrap lg:flex-nowrap lg:gap-16 text-center
-              lg:text-left">
+              		lg:text-left">
 									<div className="w-full lg:w-auto">
 										<ul
 											className="text-black-secondary dark:text-white-secondary 
