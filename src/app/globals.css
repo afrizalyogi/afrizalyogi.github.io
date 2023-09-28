@@ -30,6 +30,7 @@ a:hover {
 }
 
 #blog-page h2 {
+	font-weight: 700;
 	font-size: 2.25rem;
 	line-height: 2.5rem;
 	margin-bottom: 0.5rem;
