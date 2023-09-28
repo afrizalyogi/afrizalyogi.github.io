@@ -30,6 +30,7 @@ a:hover {
 }
 
 #blog-page h2 {
+	font-weight: 700;
 	font-size: 1.25rem;
 	line-height: 1.75rem;
 }
@@ -204,7 +205,6 @@ html.dark .swiper-pagination-bullet.swiper-pagination-bullet-active {
 
 @media (min-width: 640px) {
 	#blog-page h2 {
-		font-weight: 700;
 		font-size: 2.25rem;
 		line-height: 2.5rem;
 		margin-bottom: 0.5rem;
