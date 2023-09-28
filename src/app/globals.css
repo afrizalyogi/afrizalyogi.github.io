@@ -206,13 +206,13 @@ html.dark .swiper-pagination-bullet.swiper-pagination-bullet-active {
 
 @media (min-width: 640px) {
 	#blog-page h2 {
-		font-size: 1.5rem;
-		line-height: 2rem;
+		font-size: 1.25rem;
+		line-height: 1.75rem;
 	}
 
 	#blog-page p {
-		font-size: 0.875rem;
-		line-height: 1.25rem;
+		font-size: 0.75rem;
+		line-height: 1rem;
 	}
 
 	.swiper-button-prev:after {

@@ -54,8 +54,8 @@ export default async function BlogPage({
 						height={40}
 					/>
 					<div className="grid grid-flow-row items-center">
-						<p className="text-sm lg:text-xl">Afrizal Yogi Pratama</p>
-						<p className="text-sm lg:text-lg text-black-secondary dark:text-white-secondary">
+						<p className="text-xs lg:text-xl">Afrizal Yogi Pratama</p>
+						<p className="text-xs lg:text-lg text-black-secondary dark:text-white-secondary">
 							{formatDate(data.date)}
 						</p>
 					</div>
