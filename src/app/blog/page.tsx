@@ -33,7 +33,7 @@ export default async function Blog() {
 					</div>
 				</div>
 				<div className="section-content">
-					<div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
+					<div className="grid grid-cols-1 lg:grid-cols-2">
 						{data.map((item) => (
 							<Link href={`/blog/${item.slug.current}`}>
 								<div
@@ -50,7 +50,7 @@ export default async function Blog() {
 										sm:text-2xl">
 											{item.title}
 										</h2>
-										<p className="mb-4 line-clamp-2 text-sm lg:text-lg">
+										<p className="mb-4 line-clamp-2 text-sm lg:text-lg text-black-secondary dark:text-white-secondary">
 											{item.overview}
 										</p>
 									</div>

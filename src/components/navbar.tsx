@@ -147,7 +147,7 @@ export default function Navbar() {
 													About me
 												</Link>
 											</li>
-											{/* <li className="py-4 lg:py-8">
+											<li className="py-4 lg:py-8">
 												<Link
 													href="/blog"
 													className={
@@ -158,7 +158,7 @@ export default function Navbar() {
 													onClick={() => setIsShow(false)}>
 													Blog
 												</Link>
-											</li> */}
+											</li>
 										</ul>
 									</div>
 								</div>

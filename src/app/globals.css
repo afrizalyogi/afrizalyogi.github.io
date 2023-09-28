@@ -29,6 +29,11 @@ a:hover {
 	color: var(--blue-primary);
 }
 
+#blog-page h2 {
+	font-weight: 700;
+	font-size: 36px;
+}
+
 #hamburger:hover .hamburger-1,
 #hamburger:hover .hamburger-2 {
 	background: var(--black-primary);
@@ -193,6 +198,10 @@ html.dark .swiper-pagination-bullet.swiper-pagination-bullet-active {
 }
 
 @media (min-width: 640px) {
+	#blog-page h2 {
+		font-size: 24px;
+	}
+
 	.swiper-button-prev:after {
 		padding-left: 18px;
 		padding-right: 24px;
