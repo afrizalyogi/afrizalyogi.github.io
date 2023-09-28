@@ -38,19 +38,21 @@ export default async function Blog() {
 							<Link href={`/blog/${item.slug.current}`}>
 								<div
 									key={item._id}
-									className="grid lg:grid-cols-4 justify-center items-center gap-6 rounded-xl border-2 p-6">
+									className="grid lg:grid-cols-4 justify-center items-center gap-2 lg:gap-6 rounded-xl border-2 p-6">
 									<div>
-										<p className="text-sm lg:text-lg text-black-secondary dark:text-white-secondary">
+										<p className="font-bold text-sm lg:text-lg text-black-secondary dark:text-white-secondary">
 											{formatDate(item.date)}
 										</p>
 									</div>
 									<div className="col-span-3">
 										<h2
-											className="font-bold text-md
+											className="font-bold text-md mb-2
 										sm:text-2xl">
 											{item.title}
 										</h2>
-										<p className="mb-4 text-sm lg:text-lg">{item.overview}</p>
+										<p className="mb-4 line-clamp-2 text-sm lg:text-lg">
+											{item.overview}
+										</p>
 									</div>
 								</div>
 							</Link>
