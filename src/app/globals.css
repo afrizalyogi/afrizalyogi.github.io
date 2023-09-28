@@ -30,8 +30,14 @@ a:hover {
 }
 
 #blog-page h2 {
-	font-weight: 700;
-	font-size: 36px;
+	font-size: 2.25rem;
+	line-height: 2.5rem;
+	margin-bottom: 0.5rem;
+}
+
+#blog-page p {
+	font-size: 1.125rem;
+	line-height: 1.75rem;
 }
 
 #hamburger:hover .hamburger-1,
@@ -199,7 +205,13 @@ html.dark .swiper-pagination-bullet.swiper-pagination-bullet-active {
 
 @media (min-width: 640px) {
 	#blog-page h2 {
-		font-size: 24px;
+		font-size: 1.5rem;
+		line-height: 2rem;
+	}
+
+	#blog-page p {
+		font-size: 0.875rem;
+		line-height: 1.25rem;
 	}
 
 	.swiper-button-prev:after {
