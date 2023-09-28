@@ -1,7 +1,6 @@
 import Image from "next/image"
 import { getData, type Post } from "@/../sanity/lib/query"
 import MainWrapper from "@/components/main-wrapper"
-import Contact from "@/components/contact"
 import Link from "next/link"
 import formatDate from "@/components/date-format"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -48,13 +47,14 @@ export default async function Blog() {
 											{item.title}
 										</h2>
 										<p className="mb-4 line-clamp-2 text-sm lg:text-lg text-black-secondary dark:text-white-secondary">
-											{item.overview}awddwadawd
+											{item.overview}
 										</p>
 									</div>
 									<div>
 										<p className="text-sm lg:text-lg text-black-secondary dark:text-white-secondary">
-											<FontAwesomeIcon icon={faCalendar}></FontAwesomeIcon>
-											{"  "}
+											<FontAwesomeIcon
+												icon={faCalendar}
+												className="mr-2"></FontAwesomeIcon>{" "}
 											{formatDate(item.date)}
 										</p>
 									</div>
@@ -64,7 +64,6 @@ export default async function Blog() {
 					</div>
 				</div>
 			</section>
-			<Contact></Contact>
 		</MainWrapper>
 	)
 }

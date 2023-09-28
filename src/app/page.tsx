@@ -13,7 +13,6 @@ import {
 } from "@/components/profile-img"
 import MainWrapper from "@/components/main-wrapper"
 import Showcase from "@/components/showcase"
-import Contact from "@/components/contact"
 import Services from "@/components/service"
 import Testimonial from "@/components/testimonial"
 
@@ -93,7 +92,6 @@ export default function Home() {
 			<Services></Services>
 			<Showcase></Showcase>
 			<Testimonial></Testimonial>
-			<Contact></Contact>
 		</MainWrapper>
 	)
 }

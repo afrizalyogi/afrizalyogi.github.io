@@ -4,7 +4,6 @@ import Link from "next/link"
 import Image from "next/image"
 import MainWrapper from "@/components/main-wrapper"
 import showcase from "../../data/showcase.json"
-import Contact from "@/components/contact"
 
 interface Projects {
 	title: string
@@ -95,7 +94,6 @@ export default function Project() {
 					</div>
 				</div>
 			</section>
-			<Contact></Contact>
 		</MainWrapper>
 	)
 }

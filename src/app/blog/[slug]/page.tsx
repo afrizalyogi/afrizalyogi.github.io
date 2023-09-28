@@ -1,11 +1,10 @@
 import { client } from "@/../sanity/lib/client"
 import { Post } from "@/../sanity/lib/query"
 import { PortableText } from "@portabletext/react"
-import Contact from "@/components/contact"
 import MainWrapper from "@/components/main-wrapper"
 import urlFor from "@/../sanity/lib/image"
 import Image from "next/image"
-import { faAnglesLeft, faArrowLeft } from "@fortawesome/free-solid-svg-icons"
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Link from "next/link"
 import formatDate from "@/components/date-format"
@@ -70,7 +69,6 @@ export default async function BlogPage({
 					</div>
 				</div>
 			</section>
-			<Contact></Contact>
 		</MainWrapper>
 	)
 }

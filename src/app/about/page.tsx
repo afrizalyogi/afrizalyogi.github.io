@@ -3,7 +3,6 @@ import AboutMe from "@/components/about-me"
 import Services from "@/components/service"
 import Journey from "@/components/journey"
 import Talent from "@/components/talent"
-import Contact from "@/components/contact"
 
 export default function About() {
 	return (
@@ -12,7 +11,6 @@ export default function About() {
 			<Services></Services>
 			<Journey></Journey>
 			<Talent></Talent>
-			<Contact></Contact>
 		</MainWrapper>
 	)
 }
