@@ -33,14 +33,14 @@ export default async function BlogPage({
 
 	return (
 		<MainWrapper>
-			<section id="blog-page" className="py-20 max-w-screen-md mx-auto">
+			<section id="blog-page" className="pt-12 pb-20 max-w-screen-md mx-auto">
 				<Link
 					href={"/blog"}
 					className="flex gap-2 items-center mb-12 text-black-secondary dark:text-white-secondary">
 					<FontAwesomeIcon icon={faArrowLeft}></FontAwesomeIcon>
 					Back
 				</Link>
-				<div className="section-titlelg:mb-12">
+				<div className="section-title lg:mb-12">
 					<h1
 						className="text-3xl font-bold
 							sm:text-5xl">

@@ -4,6 +4,8 @@ import MainWrapper from "@/components/main-wrapper"
 import Contact from "@/components/contact"
 import Link from "next/link"
 import formatDate from "@/components/date-format"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faCalendar } from "@fortawesome/free-solid-svg-icons"
 
 export default async function Blog() {
 	const data = (await getData()) as Post[]
@@ -33,17 +35,12 @@ export default async function Blog() {
 					</div>
 				</div>
 				<div className="section-content">
-					<div className="grid grid-cols-1 lg:grid-cols-2">
+					<div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3">
 						{data.map((item) => (
 							<Link href={`/blog/${item.slug.current}`}>
 								<div
 									key={item._id}
-									className="grid lg:grid-cols-4 justify-center items-center gap-2 lg:gap-6 rounded-xl border-2 p-6">
-									<div>
-										<p className="font-bold text-sm lg:text-lg text-black-secondary dark:text-white-secondary">
-											{formatDate(item.date)}
-										</p>
-									</div>
+									className="grid grid-cols-1 justify-center items-center gap-2 rounded-xl border-2 p-6">
 									<div className="col-span-3">
 										<h2
 											className="font-bold text-md mb-2
@@ -51,7 +48,14 @@ export default async function Blog() {
 											{item.title}
 										</h2>
 										<p className="mb-4 line-clamp-2 text-sm lg:text-lg text-black-secondary dark:text-white-secondary">
-											{item.overview}
+											{item.overview}awddwadawd
+										</p>
+									</div>
+									<div>
+										<p className="text-sm lg:text-lg text-black-secondary dark:text-white-secondary">
+											<FontAwesomeIcon icon={faCalendar}></FontAwesomeIcon>
+											{"  "}
+											{formatDate(item.date)}
 										</p>
 									</div>
 								</div>

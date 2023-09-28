@@ -151,7 +151,7 @@ export default function Navbar() {
 												<Link
 													href="/blog"
 													className={
-														route === "/blog"
+														route === "/blog" || "/blog/*"
 															? "font-bold  text-black-primary dark:text-white-primary"
 															: ""
 													}
