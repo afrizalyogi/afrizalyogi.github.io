@@ -48,7 +48,7 @@ export default function Journey() {
 					}}
 					pagination={{ clickable: true }}
 					loop={true}>
-					{journeyData.map((item, index) => (
+					{journeyData.map((item) => (
 						<SwiperSlide className="bg-white-primary dark:bg-black-bg pb-16">
 							{({ isActive }) => (
 								<div className={isActive ? "" : "hidden"}>
@@ -56,17 +56,17 @@ export default function Journey() {
 										<div>
 											<p
 												className="font-bold text-black-secondary dark:text-white-secondary
-							text-xl lg:text-2xl">
+												text-md lg:text-xl">
 												{item.company}
 											</p>
 											<h2
 												className="font-bold text-2xl py-2
-								lg:text-4xl">
+												lg:text-4xl">
 												{item.title}
 											</h2>
 											<p
 												className="font-bold text-black-secondary dark:text-white-secondary
-								text-xl lg:text-2xl">
+												text-md lg:text-xl">
 												{item.date}
 											</p>
 										</div>

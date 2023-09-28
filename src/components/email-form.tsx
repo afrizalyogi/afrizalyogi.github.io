@@ -53,7 +53,7 @@ export default function EmailForm() {
 			<div className="grid lg:grid-cols-2 gap-x-6">
 				<div className="flex flex-wrap gap-2 mb-6">
 					<label
-						className="text-sm lg:text-lg text-black-secondary dark:text-white-secondary"
+						className="text-sm lg:text-lg text-white-secondary"
 						htmlFor="name">
 						Name
 					</label>
@@ -70,7 +70,7 @@ export default function EmailForm() {
 				</div>
 				<div className="flex flex-wrap gap-2 mb-6">
 					<label
-						className="text-sm lg:text-lg text-black-secondary dark:text-white-secondary"
+						className="text-sm lg:text-lg text-white-secondary"
 						htmlFor="from">
 						Email
 					</label>
@@ -87,7 +87,7 @@ export default function EmailForm() {
 				</div>
 				<div className="flex flex-wrap gap-2 mb-6">
 					<label
-						className="text-sm lg:text-lg text-black-secondary dark:text-white-secondary"
+						className="text-sm lg:text-lg text-white-secondary"
 						htmlFor="phone">
 						Phone
 					</label>
@@ -104,7 +104,7 @@ export default function EmailForm() {
 				</div>
 				<div className="flex flex-wrap gap-2 mb-6">
 					<label
-						className="text-sm lg:text-lg text-black-secondary dark:text-white-secondary"
+						className="text-sm lg:text-lg text-white-secondary"
 						htmlFor="subject">
 						Subject
 					</label>
@@ -122,7 +122,7 @@ export default function EmailForm() {
 			</div>
 			<div className="flex flex-wrap gap-2 mb-6">
 				<label
-					className="text-sm lg:text-lg text-black-secondary dark:text-white-secondary"
+					className="text-sm lg:text-lg text-white-secondary"
 					htmlFor="text">
 					Message
 				</label>

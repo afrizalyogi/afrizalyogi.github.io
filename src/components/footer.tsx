@@ -1,11 +1,12 @@
 import { faCode, faHeart } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Link from "next/link"
+import EmailForm from "./email-form"
 
 export default function Footer() {
 	return (
 		<footer
-			className="mx-auto px-6 py-24 bg-black-primary text-white-primary
+			className="mx-auto px-6 py-24 border-t-2 border-black-bg bg-black-primary text-white-primary
 					sm:px-12
 					lg:px-48">
 			<div className="flex justify-start gap-4 mb-4">

@@ -147,18 +147,18 @@ export default function Navbar() {
 													About me
 												</Link>
 											</li>
-											{/* <li className="py-4 lg:py-8">
+											<li className="py-4 lg:py-8">
 												<Link
 													href="/blog"
 													className={
-														route === "/blog"
+														route == "/blog"
 															? "font-bold  text-black-primary dark:text-white-primary"
 															: ""
 													}
 													onClick={() => setIsShow(false)}>
 													Blog
 												</Link>
-											</li> */}
+											</li>
 										</ul>
 									</div>
 								</div>
