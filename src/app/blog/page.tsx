@@ -8,6 +8,7 @@ import { faCalendar } from "@fortawesome/free-solid-svg-icons"
 
 export default async function Blog() {
 	const data = (await getData()) as Post[]
+
 	return (
 		<MainWrapper>
 			<section id="blog" className="py-20">
@@ -34,15 +35,15 @@ export default async function Blog() {
 					</div>
 				</div>
 				<div className="section-content">
-					<div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3">
+					<div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-6">
 						{data.map((item) => (
 							<Link href={`/blog/${item.slug.current}`}>
 								<div
 									key={item._id}
-									className="grid grid-cols-1 justify-center items-center gap-2 rounded-xl border-2 p-6">
-									<div className="col-span-3">
+									className="flex flex-col justify-between h-64 rounded-xl border-2 p-6">
+									<div className="h-1/2">
 										<h2
-											className="font-bold text-md mb-2
+											className="font-bold text-md mb-2 line-clamp-3
 										sm:text-2xl">
 											{item.title}
 										</h2>
