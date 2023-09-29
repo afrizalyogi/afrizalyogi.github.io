@@ -51,10 +51,12 @@ a:hover {
 
 #blog-page ul {
 	list-style-type: disc;
-	list-style-position: unset;
+	list-style-position: inside;
 }
 
 #blog-page img {
+	display: flex;
+	justify-content: center;
 	margin-left: 0;
 	margin-right: 0;
 }
