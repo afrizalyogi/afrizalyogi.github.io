@@ -37,14 +37,24 @@ a:hover {
 
 #blog-page h4 {
 	font-weight: 700;
-	font-size: 1.125rem;
-	line-height: 1.75rem;
+	font-size: 1rem;
+	line-height: 1.5rem;
 }
 
-#blog-page .section-content p {
+#blog-page .section-content p,
+#blog-page ul {
 	font-size: 0.75rem;
 	line-height: 1rem;
 	margin-bottom: 2rem;
+	color: var(--black-secondary);
+}
+
+#blog-page ul {
+	list-style-type: disc;
+}
+
+html.dark #blog-page .section-content p {
+	color: var(--white-secondary);
 }
 
 #hamburger:hover .hamburger-1,
@@ -218,11 +228,12 @@ html.dark .swiper-pagination-bullet.swiper-pagination-bullet-active {
 	}
 
 	#blog-page h4 {
-		font-size: 1rem;
-		line-height: 1.5rem;
+		font-size: 1.125rem;
+		line-height: 1.75rem;
 	}
 
-	#blog-page .section-content p {
+	#blog-page .section-content p,
+	#blog-page ul {
 		font-size: 1.125rem;
 		line-height: 1.75rem;
 	}
