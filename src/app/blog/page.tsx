@@ -6,8 +6,13 @@ import formatDate from "@/components/date-format"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCalendar } from "@fortawesome/free-solid-svg-icons"
 
-export default async function Blog() {
+export async function fetchData() {
 	const data = (await getData()) as Post[]
+	return data
+}
+
+export default async function Blog() {
+	const data = await fetchData()
 
 	return (
 		<MainWrapper>
