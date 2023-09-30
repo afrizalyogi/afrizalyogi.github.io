@@ -1,7 +1,5 @@
 import { faCode, faHeart } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import Link from "next/link"
-import EmailForm from "./email-form"
 
 export default function Footer() {
 	return (
@@ -9,41 +7,68 @@ export default function Footer() {
 			className="mx-auto px-6 py-24 border-t-2 border-black-bg bg-black-primary text-white-primary
 					sm:px-12
 					lg:px-48">
-			<div className="flex justify-start gap-4 mb-4">
-				<Link
+			<div className="flex justify-start gap-4 mb-6">
+				<a
 					href="https://www.linkedin.com/in/afrizalyogi/"
 					className="font-bold hover:text-blue-primary
                       text-sm
 											md:text-md
 											lg:text-lg">
 					LinkedIn
-				</Link>
-				<Link
+				</a>
+				<a
 					href="https://github.com/afrizalyogi"
 					className="font-bold hover:text-blue-primary
                       text-sm
 											md:text-md
 											lg:text-lg">
 					GitHub
-				</Link>
-				<Link
+				</a>
+				<a
 					href="https://t.me/afrizalyogi"
 					className="font-bold hover:text-blue-primary
                       text-sm
 											md:text-md
 											lg:text-lg">
 					Telegram
-				</Link>
+				</a>
 			</div>
-			<h1
-				className="text-lg text-white-primary font-bold mb-10
+			<div className="flex flex-col gap-4 mb-10">
+				<h1
+					className="text-lg text-white-primary font-bold
 							sm:text-2xl
 							lg:text-4xl">
-				Let's collaborate! just reach me <br /> out -{" "}
-				<Link href={"mailto:afrizalyogi.id@gmail.com"} target="_blank">
-					afrizalyogi.id@gmail.com
-				</Link>
-			</h1>
+					Let's collaborate! just reach me <br /> out -{" "}
+					<a href={"mailto:afrizalyogi.id@gmail.com"} target="_blank">
+						afrizalyogi.id@gmail.com
+					</a>
+				</h1>
+				<div className="flex gap-6">
+					<div>
+						<a
+							href="https://jagoweb.com/"
+							target="_blank"
+							rel="noreferrer noopener">
+							<img
+								className="h-14 lg:h-20"
+								src="https://www.jagoweb.com/image/media/small/media_2109014358png"
+								alt="Web Hosting Murah Gratis Domain"
+							/>
+						</a>
+					</div>
+					{/* <div className="academy-badge">
+						<a
+							href="https://app.hubspot.com/academy/achievements/xs9ff36q/en/1/afrizal-yogi-pratama/digital-marketing"
+							title="Digital Marketing ">
+							<img
+								className="h-16 lg:h-24"
+								src="https://hubspot-credentials-na1.s3.amazonaws.com/prod/badges/user/d4e18b74118e4e1dbc3b5a1e8075cfb5.png"
+								alt="HubSpot Credentials"
+							/>
+						</a>
+					</div> */}
+				</div>
+			</div>
 			<div
 				className="text-sm
 						sm:text-md">
@@ -51,12 +76,12 @@ export default function Footer() {
 				with
 				<FontAwesomeIcon icon={faHeart} className="mx-2" />
 				by{" "}
-				<Link
+				<a
 					href="https://afrizalyogi.studio"
 					target="_blank"
 					rel="noopener noreferrer">
 					<b>Afrizal Yogi Pratama</b>
-				</Link>
+				</a>
 			</div>
 		</footer>
 	)
