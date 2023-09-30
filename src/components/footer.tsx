@@ -43,30 +43,43 @@ export default function Footer() {
 						afrizalyogi.id@gmail.com
 					</a>
 				</h1>
-				<div className="flex gap-6">
+				<div className="flex gap-4">
 					<div>
 						<a
 							href="https://jagoweb.com/"
 							target="_blank"
 							rel="noreferrer noopener">
 							<img
-								className="h-14 lg:h-20"
-								src="https://www.jagoweb.com/image/media/small/media_2109014358png"
+								className="h-14 lg:h-20 rounded-md lg:rounded-xl"
+								src="/assets/partner/jagoweb.png"
 								alt="Web Hosting Murah Gratis Domain"
 							/>
 						</a>
 					</div>
-					{/* <div className="academy-badge">
+					<div>
 						<a
-							href="https://app.hubspot.com/academy/achievements/xs9ff36q/en/1/afrizal-yogi-pratama/digital-marketing"
-							title="Digital Marketing ">
+							href="https://www.credly.com/badges/cfe9a8f9-4c22-43f0-86a1-d6d6eedab48a/public_url"
+							target="_blank"
+							rel="noreferrer noopener">
 							<img
-								className="h-16 lg:h-24"
-								src="https://hubspot-credentials-na1.s3.amazonaws.com/prod/badges/user/d4e18b74118e4e1dbc3b5a1e8075cfb5.png"
-								alt="HubSpot Credentials"
+								className="h-14 lg:h-20 rounded-md lg:rounded-xl"
+								src="/assets/partner/CCNAITN__1_.png"
+								alt="Cisco Verified"
 							/>
 						</a>
-					</div> */}
+					</div>
+					<div>
+						<a
+							href="https://drive.google.com/file/d/10wNMEa0ZBIl03pmxuZxmPmZyGbepUSEa/view?usp=sharing"
+							target="_blank"
+							rel="noreferrer noopener">
+							<img
+								className="h-14 lg:h-20 rounded-md lg:rounded-xl"
+								src="/assets/partner/bnsp.png"
+								alt="Junior Web Developer"
+							/>
+						</a>
+					</div>
 				</div>
 			</div>
 			<div
