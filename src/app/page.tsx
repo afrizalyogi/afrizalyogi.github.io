@@ -15,6 +15,7 @@ import MainWrapper from "@/components/main-wrapper"
 import Showcase from "@/components/showcase"
 import Services from "@/components/service"
 import Testimonial from "@/components/testimonial"
+import Talent from "@/components/talent"
 
 export default function Home() {
 	return (
@@ -92,6 +93,7 @@ export default function Home() {
 			<Services></Services>
 			<Showcase></Showcase>
 			<Testimonial></Testimonial>
+			<Talent></Talent>
 		</MainWrapper>
 	)
 }

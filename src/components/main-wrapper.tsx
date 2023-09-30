@@ -16,7 +16,7 @@ export default function MainWrapper({ children }: WrapperProps) {
 				transition={{ delay: 0.25 }}
 				className="bg-white-primary text-black-primary dark:bg-black-bg dark:text-white-primary">
 				<main
-					className="pt-12 px-6 sm:px-12 
+					className="pt-12 px-6 sm:px-12
 					lg:px-48 lg:pt-24">
 					{children}
 				</main>

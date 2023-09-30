@@ -4,7 +4,7 @@ import React, { ReactNode } from "react"
 import { Suspense } from "react"
 import FooterLoading from "./footer-loading"
 import Navbar from "@/components/navbar"
-import Footer from "@/components/footer"
+import Footer from "./footer"
 import BackToTop from "@/components/back-to-top"
 
 interface WrapperProps {

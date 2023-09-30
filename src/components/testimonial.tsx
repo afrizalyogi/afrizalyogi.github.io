@@ -39,13 +39,13 @@ export default function Testimonial() {
 					</div>
 				</div>
 			</div>
-			<div className="section-content">
+			<div className="section-content max-w-screen-md">
 				<Swiper
 					modules={[A11y, Autoplay, Pagination]}
 					spaceBetween={50}
 					slidesPerView={1}
 					autoplay={{
-						delay: 3000,
+						delay: 6000,
 					}}
 					pagination={{ clickable: true }}
 					loop={true}>
@@ -56,9 +56,8 @@ export default function Testimonial() {
 									<h2 className="mb-12 text-sm sm:text-xl text-black-secondary dark:text-white-secondary">
 										<FontAwesomeIcon
 											icon={faQuoteLeft}
-											className="text-4xl lg:text-5xl mb-4"
+											className="text-4xl lg:text-5xl mb-2 mr-4"
 										/>
-										<br />
 										{item.text}
 									</h2>
 									<p className="font-bold text-xl lg:text-2xl">{item.name}</p>
