@@ -1,0 +1,17 @@
+#hero {
+  padding-top: 84px;
+  flex-direction: column;
+}
+#hero-text h1 {
+  text-align: center;
+}
+#hero-text #hero-cta {
+  justify-content: center;
+  flex-direction: column;
+}
+#hero-text #hero-cta a {
+  width: 80%;
+}
+#hero-img {
+  display: none !important;
+}

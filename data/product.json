@@ -1,0 +1,15 @@
+[
+  {
+  "title": "",
+  "description": "",
+  "image": "",
+  "categories": ["Ebook", "AI", "Web Development", "Career", "Freelance", "Passive Income"],
+  "linkTitle": ["Download Sampel", "Beli Sekarang"],
+  "linkUrl": [
+    "LINK_DOWNLOAD_SAMPEL_ANDA",
+    "LINK_PEMBELIAN_EBOOK_ANDA" 
+  ],
+  "priceSale": "", 
+  "price": "" 
+  }
+]

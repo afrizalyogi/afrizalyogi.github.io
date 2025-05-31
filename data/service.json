@@ -1,0 +1,23 @@
+[
+  {
+    "id": "service-1",
+    "imageSrc": "/assets/about/service-1.jpg",
+    "altText": "Application Design Service",
+    "title": "Application Design",
+    "description": "Craft innovative concepts into app interfaces for enhanced user experiences."
+  },
+  {
+    "id": "service-2",
+    "imageSrc": "/assets/about/service-2.jpg",
+    "altText": "Website Design Service",
+    "title": "Website Design",
+    "description": "Create stunning web designs for seamless user experience on desktop and mobile."
+  },
+  {
+    "id": "service-3",
+    "imageSrc": "/assets/about/service-3.jpg",
+    "altText": "Website Design Service",
+    "title": "Website Development",
+    "description": "Transforming design into functional, responsive code for both Desktop and Mobile."
+  }
+]
