@@ -1,0 +1,41 @@
+[
+  {
+    "title": "Design",
+    "skills": [
+      "Responsive Web Design",
+      "Mobile App Design",
+      "Usability Testing",
+      "Design Systems",
+      "Design Thinking",
+      "Prototyping",
+      "Figma",
+      "Maze"
+    ]
+  },
+  {
+    "title": "Development",
+    "skills": [
+      "Tailwind CSS",
+      "Typescript",
+      "Bootstrap",
+      "Next.js",
+      "HTML",
+      "Sass",
+      "CSS",
+      "Git"
+    ]
+  },
+  {
+    "title": "Professional",
+    "skills": [
+      "Project Management",
+      "Time Management",
+      "Problem Solving",
+      "Adaptability",
+      "Self-Growth",
+      "Teamwork",
+      "Creativity",
+      "Teaching"
+    ]
+  }
+]

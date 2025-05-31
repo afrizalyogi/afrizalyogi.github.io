@@ -1,0 +1,129 @@
+[
+  {
+    "title": "Bloomberg-like Terminal",
+    "description": "A web application replicating key features of a Bloomberg Terminal, including interactive charting, real-time Insider Transactions, Financials as Reported, SEC Filings, Ticker News, and integrated live news feeds for comprehensive financial data analysis.",
+    "image": "assets/showcase/showcase-1.png",
+    "categories": ["Web Application", "Financial Tech", "Data Visualization", "Real-time Data"],
+    "linkTitle": ["Live Preview"],
+    "linkUrl": ["https://bloomberg-terminal-eight.vercel.app/"]
+  },
+  {
+    "title": "SiHelau - Sustainable Lampung Tourism App",
+    "description": "Developing a mobile application for sustainable tourism in Lampung, Indonesia, focusing on eco-friendly travel options, local cultural experiences, and community engagement.",
+    "image": "assets/showcase/showcase-2.png",
+    "categories": ["Mobile App Development", "Sustainable Tourism", "UI/UX Design"],
+    "linkTitle": ["Live Preview"],
+    "linkUrl": ["https://www.figma.com/proto/Jrqacbs3nyMa1OC6bFxeQY/Design-Aplikasi-Wisata---Lampung-Begawi-2023?node-id=325-1742"]
+  },
+  {
+    "title": "Ramadhan 2023 Countdown",
+    "description": "A web project built with HTML, CSS, and JavaScript that displays a real-time countdown to the start of Ramadan 2023, featuring a clean and engaging interface.",
+    "image": "assets/showcase/showcase-3.png",
+    "categories": ["HTML", "CSS", "JavaScript", "Web Development"],
+    "linkTitle": ["View GitHub Repo", "Live Preview"],
+    "linkUrl": [
+      "https://github.com/afrizalyogi/event-countdown",
+      "https://ramadhan2023-countdown.vercel.app/"
+    ]
+  },
+  {
+    "title": "Persona (Personality Analysis)",
+		"description": "A simple application designed and has a neutral color to reduce user distraction when taking personality tests.",
+		"image": "assets/showcase/showcase-4.png",
+		"categories": ["UI Design", "UX Research"],
+		"linkTitle": ["View Projects"],
+    "linkUrl": ["https://drive.google.com/drive/folders/1Pjn9IpkMOFMbeee3rhuEt1j49jE13GZ5"]
+  },
+  {
+    "title": "LetsOut Travel Booking",
+		"description": "Slicing design into a responsive travel website from scratch using HTML, Pure CSS, and Vanilla JavaScript.",
+		"image": "assets/showcase/showcase-5.png",
+		"categories": ["HTML", "Pure CSS", "Vanilla JavaScript"],
+		"linkTitle": ["View GitHub Repo", "Live Preview"],
+    "linkUrl": [
+      "https://github.com/afrizalyogi/letsout-travel",
+      "https://letsout-travel-web.vercel.app/"
+    ]
+  },
+  {
+    "title": "LiburanYuk Travel Website",
+    "description": "Developing a user-friendly and responsive travel website, focusing on intuitive navigation and seamless booking experiences across various devices.",
+    "image": "assets/showcase/showcase-6.png",
+    "categories": ["Web Development", "Responsive Design", "Travel Tech"],
+    "linkTitle": ["View Project", "Live Preview"],
+    "linkUrl": [
+      "https://github.com/afrizalyogi/liburanyuk-travel",
+      "https://liburanyuk-travel.vercel.app/"
+    ]
+  },
+  {
+    "title": "Stopwatch Pomodoro",
+    "description": "A productivity tool combining a stopwatch with the Pomodoro Technique, designed to help users manage time effectively and improve focus during work sessions.",
+    "image": "assets/showcase/showcase-7.png",
+    "categories": ["Web Application", "Productivity Tool", "JavaScript"],
+    "linkTitle": ["View GitHub Repo", "Live Preview"],
+    "linkUrl": [
+      "https://github.com/afrizalyogi/stopwatch",
+      "https://afrizalyogi.github.io/stopwatch/"
+    ]
+  },
+  {
+    "title": "Quote Generator",
+    "description": "A simple web application that generates inspirational or thought-provoking quotes with a click, offering a clean interface for quick access to motivation.",
+    "image": "assets/showcase/showcase-8.png",
+    "categories": ["Web Application", "JavaScript", "API Integration"],
+    "linkTitle": ["View GitHub Repo", "Live Preview"],
+    "linkUrl": [
+      "https://github.com/afrizalyogi/random-quotes",
+      "https://afrizalyogi.github.io/random-quotes/"
+    ]
+  },
+  {
+    "title": "DC Top Up Website",
+    "description": "Designing and developing a responsive website for topping up digital currency, focusing on secure transactions, clear pricing, and a smooth user flow.",
+    "image": "assets/showcase/showcase-9.png",
+    "categories": ["Web Development", "E-commerce", "Payment Gateway Integration"],
+    "linkTitle": ["View Image"],
+    "linkUrl": ["/assets/showcase/showcase-9.png"]
+  },
+  {
+    "title": "Bisabisnisai Website",
+    "description": "Crafting a modern and informative website for Bisabisnisai, showcasing their AI-driven business solutions and services with a focus on clear communication and user engagement.",
+    "image": "assets/showcase/showcase-10.png",
+    "categories": ["Web Development", "AI Solutions", "Branding"],
+    "linkTitle": ["Live Preview"],
+    "linkUrl": ["https://bisabisnisai.vercel.app/"]
+  },
+  {
+    "title": "Persona (Personality Analysis)",
+		"description": "Create an interconnection and relationships structure between application pages.",
+		"image": "assets/showcase/showcase-11.png",
+		"categories": ["Semantic Network"],
+		"linkTitle": ["View Image"],
+    "linkUrl": ["/assets/showcase/showcase-11.png"]
+  },
+  {
+    "title": "Faculty Administration Website",
+    "description": "Developing an administration website, streamlining internal processes for academic and administrative tasks.",
+    "image": "assets/showcase/showcase-12.png",
+    "categories": ["Web Development", "Campus Management", "Database Integration"],
+    "linkTitle": ["View Image"],
+    "linkUrl": ["/assets/showcase/showcase-12.png"]
+  },
+	{
+		"title": "iReminder App",
+		"description": "Designing the entities, attributes, and relationships that will be required on a reminder app.",
+		"image": "assets/showcase/showcase-13.png",
+		"categories": ["Database Design"],
+		"linkTitle": ["View Image"],
+		"linkUrl": ["/assets/showcase/showcase-13.png"]
+	},
+	{
+		"title": "Hidayat Travel Bureau",
+		"description": "Designing the entities, attributes, and relationships that will be required on a travel website database.",
+		"image": "assets/showcase/showcase-14.png",
+		"categories": ["Database Design"],
+		"linkTitle": ["View Image"],
+		"linkUrl": ["/assets/showcase/showcase-14.png"]
+	}
+]
