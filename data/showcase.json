@@ -20,7 +20,7 @@
     "description": "A web project built with HTML, CSS, and JavaScript that displays a real-time countdown to the start of Ramadan 2023, featuring a clean and engaging interface.",
     "image": "assets/showcase/showcase-3.png",
     "categories": ["HTML", "CSS", "JavaScript", "Web Development"],
-    "linkTitle": ["View GitHub Repo", "Live Preview"],
+    "linkTitle": ["View Repo", "Live Preview"],
     "linkUrl": [
       "https://github.com/afrizalyogi/event-countdown",
       "https://ramadhan2023-countdown.vercel.app/"
@@ -39,7 +39,7 @@
 		"description": "Slicing design into a responsive travel website from scratch using HTML, Pure CSS, and Vanilla JavaScript.",
 		"image": "assets/showcase/showcase-5.png",
 		"categories": ["HTML", "Pure CSS", "Vanilla JavaScript"],
-		"linkTitle": ["View GitHub Repo", "Live Preview"],
+		"linkTitle": ["View Repo", "Live Preview"],
     "linkUrl": [
       "https://github.com/afrizalyogi/letsout-travel",
       "https://letsout-travel.vercel.app/"
@@ -61,7 +61,7 @@
     "description": "A productivity tool combining a stopwatch with the Pomodoro Technique, designed to help users manage time effectively and improve focus during work sessions.",
     "image": "assets/showcase/showcase-7.png",
     "categories": ["Web Application", "Productivity Tool", "JavaScript"],
-    "linkTitle": ["View GitHub Repo", "Live Preview"],
+    "linkTitle": ["View Repo", "Live Preview"],
     "linkUrl": [
       "https://github.com/afrizalyogi/stopwatch",
       "https://afrizalyogi.github.io/stopwatch/"
@@ -72,7 +72,7 @@
     "description": "A simple web application that generates inspirational or thought-provoking quotes with a click, offering a clean interface for quick access to motivation.",
     "image": "assets/showcase/showcase-8.png",
     "categories": ["Web Application", "JavaScript", "API Integration"],
-    "linkTitle": ["View GitHub Repo", "Live Preview"],
+    "linkTitle": ["View Repo", "Live Preview"],
     "linkUrl": [
       "https://github.com/afrizalyogi/random-quotes",
       "https://afrizalyogi.github.io/random-quotes/"

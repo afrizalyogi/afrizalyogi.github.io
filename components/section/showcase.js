@@ -73,7 +73,7 @@ export default function Showcase() {
 												{item.categories.map((category, index) => (
 													<span
 														key={index}
-														className="carousel-categor text-xs sm:text-sm px-3 py-2 rounded-3xl items-center flex bg-white-secondary text-black-secondary dark:bg-gray-700 dark:text-white-primary">
+														className="hidden lg:flex text-xs sm:text-sm px-3 py-2 rounded-3xl items-center bg-white-secondary text-black-secondary dark:bg-gray-700 dark:text-white-primary">
 														{category}
 													</span>
 												))}
@@ -81,18 +81,18 @@ export default function Showcase() {
 											<h2 className="carousel-title mb-2 font-bold text-2xl sm:text-4xl lg:text-5xl">
 												{item.title}
 											</h2>
-											<p className="carousel-description w-3/4 mx-auto lg:mx-0 lg:w-auto mb-4 text-sm lg:text-lg ">
+											<p className="carousel-description w-3/4 mx-auto lg:mx-0 lg:w-auto mb-4 text-sm lg:text-lg line-clamp-2">
 												{item.description}
 											</p>
 										</div>
 										<div className="flex justify-center xl:justify-start">
 											<div
-												className="flex flex-col xl:flex-row gap-2 mt-4 justify-center text-sm lg:justify-start lg:text-lg">
+												className="flex flex-row gap-2 mt-4 justify-center text-sm lg:justify-start lg:text-lg">
 												{item.linkTitle.map((title, index) => (
 													<Link
 														key={index}
 														href={item.linkUrl[index]}
-														className="bg-blue-primary hover:bg-blue-secondary text-white-primary! px-6 py-2 rounded-lg w-80 sm:w-auto flex items-center justify-center"
+														className="bg-blue-primary hover:bg-blue-secondary text-white-primary! px-6 py-2 rounded-lg flex items-center justify-center"
 														target="_blank">
 														<LinkIcon className="mr-2" />
 														{title}

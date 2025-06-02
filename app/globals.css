@@ -150,7 +150,7 @@ a:hover {
 
 .swiper-button-prev:after,
 .swiper-button-next:after {
-	margin-top: -284px;
+	margin-top: -210px;
 	background-color: var(--color-white);
 	color: var(--color-black-secondary);
 	border: 2px solid var(--color-white-secondary);
@@ -265,6 +265,6 @@ html.dark .section-title p b {
 		margin-top: -264px;
 		height: 48px;
 		width: 48px;
-		font-size: 24px !important;
+		font-size: 24px;
 	}
 }
