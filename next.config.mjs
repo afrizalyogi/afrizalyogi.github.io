@@ -3,7 +3,8 @@ const nextConfig = {
   images: {
     domains: [
       'cdn.lynkid.my.id',
-      'cdn.sanity.io'
+      'cdn.sanity.io',
+      'rhinoindonesia.com'
     ],
   },
 };

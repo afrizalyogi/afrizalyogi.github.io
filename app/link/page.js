@@ -38,8 +38,8 @@ export default function Links() {
                       />
                     </div>
                   )}
-                  <div className="flex mx-auto items-center gap-2">
-                    {Icon && <Icon />}
+                  <div className="flex flex-col xl:flex-row text-md sm:text-lg mx-auto text-center items-center gap-2">
+                    {Icon && <Icon className="w-8 h-8" />}
                     {link.text}
                   </div>
                 </Link>
@@ -69,7 +69,7 @@ export default function Links() {
                       />
                     </div>
                   )}
-                  <div className="flex mx-auto items-center justify-center gap-2">
+                  <div className="flex text-md sm:text-lg mx-auto items-center justify-center gap-2">
                     {Icon && <Icon />}
                     <div className="flex flex-col mt-6 text-center leading-5">
                       {link.text}
