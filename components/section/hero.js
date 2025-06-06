@@ -32,7 +32,7 @@ export default function Home() {
           lg:gap-12 lg:flex-nowrap
           xl:justify-start">
           <Link
-            target="_blank" href={"https://wa.me/628998536999?text=Hi!%20I%27d%20like%20to%20learn%20more%20about%20your%20services."}
+            target="_blank" href={"https://wa.me/628998636999?text=Hi!%20I%27d%20like%20to%20learn%20more%20about%20your%20services."}
             className="
               w-80 xl:w-fit justify-center p-4 rounded-2xl text-white-primary bg-blue-primary items-center flex hover:bg-blue-secondary hover:text-white-primary!
               sm:text-sm
