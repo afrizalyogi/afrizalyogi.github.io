@@ -1,5 +1,25 @@
-import { Library, Bot, Cloud, Images, Coffee, ShoppingBag } from "lucide-react"
+import { Library, Bot, Cloud, Images, BadgePercent, Coffee, ShoppingBag } from "lucide-react"
 export const linkData = [
+  {
+    icon: Library,
+    text: "Koleksi",
+    href: "https://vt.tokopedia.com/t/ZSSEJn942/",
+    highlight: false,
+    style: "small",
+    priceSale: "",
+    price: "",
+    imageSrc: ""
+  },
+  {
+    icon: BadgePercent,
+    text: "50 Pcs Programmer Stickers",
+    href: "https://vt.tokopedia.com/t/ZSAYJBBtT/",
+    highlight: true,
+    style: "small",
+    priceSale: "",
+    price: "",
+    imageSrc: ""
+  },
   {
     icon: "",
     text: "Elementor Pro License 1 Tahun Original",
@@ -9,16 +29,6 @@ export const linkData = [
     priceSale: "Rp 99.000",
     price: "",
     imageSrc: "https://rhinoindonesia.com/wp-content/uploads/2023/05/elementor-pro-plugin-simpansajaCom.jpg"
-  },
-  {
-    icon: Library,
-    text: "Koleksi",
-    href: "https://collshp.com/collectionby_g_",
-    highlight: false,
-    style: "small",
-    priceSale: "",
-    price: "",
-    imageSrc: ""
   },
   {
     icon: Bot,
@@ -40,16 +50,16 @@ export const linkData = [
     price: "",
     imageSrc: ""
   },
-  {
-    icon: Images,
-    text: "Abadikan Kenanganmu",
-    href: "https://lynk.id/glimpics",
-    highlight: false,
-    style: "small",
-    priceSale: "",
-    price: "",
-    imageSrc: ""
-  },
+  // {
+  //   icon: Images,
+  //   text: "Abadikan Kenanganmu",
+  //   href: "https://lynk.id/glimpics",
+  //   highlight: false,
+  //   style: "small",
+  //   priceSale: "",
+  //   price: "",
+  //   imageSrc: ""
+  // },
   {
     icon: Coffee,
     text: "Traktir Kopi",
@@ -90,16 +100,16 @@ export const linkData = [
     price: "Rp 1.299.000",
     imageSrc: "https://cdn.lynkid.my.id/products/26-11-2024/1732609117497_7523373"
   },
-  {
-    icon: "",
-    text: "BisabisnisAI Blueprint: Panduan Praktis Memulai Bisnis dengan AI✨",
-    href: "https://lynk.id/afrizalyogi/V2QdEqr",
-    highlight: false,
-    style: "big",
-    priceSale: "Rp 88.000",
-    price: "Rp 980.000",
-    imageSrc: "https://cdn.lynkid.my.id/products/17-01-2025/1737097937850_6630170"
-  },
+  // {
+  //   icon: "",
+  //   text: "BisabisnisAI Blueprint: Panduan Praktis Memulai Bisnis dengan AI✨",
+  //   href: "https://lynk.id/afrizalyogi/V2QdEqr",
+  //   highlight: false,
+  //   style: "big",
+  //   priceSale: "Rp 88.000",
+  //   price: "Rp 980.000",
+  //   imageSrc: "https://cdn.lynkid.my.id/products/17-01-2025/1737097937850_6630170"
+  // },
   {
     icon: "",
     text: "TERUPDATE Wordpress Website Designing & Development ( Elementor Template Kits PREMIUM 530++ )",

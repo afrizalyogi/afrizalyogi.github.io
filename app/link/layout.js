@@ -13,8 +13,8 @@ export const metadata = {
 
 export default function RootLayout({children}) {
 	return (
-		<body className={poppins.className}>
+		<div className={poppins.className}>
 			{children}
-		</body>
+		</div>
 	)
 }
