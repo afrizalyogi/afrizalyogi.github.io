@@ -21,6 +21,16 @@ export const linkData = [
     imageSrc: ""
   },
   {
+    icon: Cloud,
+    text: "Alibaba Cloud",
+    href: "https://www.alibabacloud.com/campaign/benefits?referral_code=A92NX4",
+    highlight: false,
+    style: "small",
+    priceSale: "",
+    price: "",
+    imageSrc: ""
+  },
+  {
     icon: "",
     text: "Elementor Pro License 1 Tahun Original",
     href: "https://s.shopee.co.id/7083Djwdxq",

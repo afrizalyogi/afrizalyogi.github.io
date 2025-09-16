@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Mail, Linkedin, Github, MessagesSquare, Instagram } from "lucide-react"
+import { Mail, Linkedin, Github, MessagesSquare, Instagram, Download } from "lucide-react"
 import {
 	ProfileTriangle,
 	ProfileBase,
@@ -28,22 +28,25 @@ export default function Home() {
         </h1>
         <div
           id="hero-cta"
-          className="flex flex-wrap gap-6 items-center justify-center text-black-secondary dark:text-white-secondary
+          className="flex flex-wrap gap-6 items-start justify-center text-black-secondary dark:text-white-secondary
           lg:gap-12 lg:flex-nowrap
           xl:justify-start">
-          <Link
-            target="_blank" href={"https://wa.me/628998636999?text=Hi!%20I%27d%20like%20to%20learn%20more%20about%20your%20services."}
-            className="
-              w-80 xl:w-fit justify-center p-4 rounded-2xl text-white-primary bg-blue-primary items-center flex hover:bg-blue-secondary hover:text-white-primary!
-              sm:text-sm
-              lg:px-6
-              2xl:text-lg
-              ">
-            <MessagesSquare className="mr-2" />
-            Free Consultation
-          </Link>
+          <div className="flex flex-col items-center">
+            <Link
+              target="_blank" href={"https://wa.me/628998636999?text=Hi!%20I%27d%20like%20to%20learn%20more%20about%20your%20services."}
+              className="
+                w-80 xl:w-fit justify-center p-4 rounded-2xl text-white-primary bg-blue-primary items-center flex hover:bg-blue-secondary hover:text-white-primary!
+                sm:text-sm
+                lg:px-6
+                2xl:text-lg
+                ">
+              <MessagesSquare className="mr-2" />
+              Free Consultation
+            </Link>
+            <Link href={"https://drive.google.com/file/d/1cl137690JGjnFGiV0jPIbYF971S8t7ST/view?usp=drive_link"} className="flex pt-4 gap-2 items-center" target="_blank"><Download className="h-5" /> Download Portfolio</Link>
+          </div>
           <div
-            className="flex w-full justify-center
+            className="flex w-full justify-center pt-3
             lg:w-auto">
             <div className="mr-8 xl:mr-12">
               <Link target="_blank" href={"https://www.linkedin.com/in/afrizalyogi/"}>
